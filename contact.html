@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Alpine Coffee</title>
+    <!--css link-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <!--css link-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src=“https://www.googletagmanager.com/gtag/js?id=UA-128983738-1“></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-128983738-1');
+    </script>
+
+</head>
+
+<body>
+
+
+    <header>
+        <div class="container">
+            <div class="mobile_nav">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="">
+                </a>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="price.html">Price</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="quality.html">Quality</a></li>
+                    <li><a href="saving_calculator.html">Savings Calculator</a></li>
+                    <li><a href="guest_experience.html">Guest Experience</a></li>
+                    <li><a class="active" href="#">Contact Us</a></li>
+                </ul>
+                <a href="contact.html" class="free_sample_button">Free Sample Today</a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3071.312636866231!2d-105.01291764869201!3d39.66518137935866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c7fe86d9d27ab%3A0xc4b4cc89eb3bf86c!2s2860+S+Tejon+St%2C+Englewood%2C+CO+80110%2C+USA!5e0!3m2!1sen!2sbd!4v1540123932284" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="contact_section">
+        <div class="container">
+            <div class="contact_section_area">
+                    <!--<div id="results" style="margin-top: 3%;">
+                        <form action="contact.php" method="post">
+                            <div class="contact_form">
+                                <h3>GET IN TOUCH</h3>
+                                <label for="">Full Name:</label>
+                                <input class="contact_text" type="text" placeholder="Name" name="name">
+                                <label for="">Phone:</label>
+                                <input class="contact_text" type="text" placeholder="+880 1723 758062" name="phone">
+                                <label for="">Email Address:</label>
+                                <input class="contact_text" type="text" placeholder="Email Address" name="email">
+                                <label for="">Company Name:</label>
+                                <input class="contact_text" type="text" placeholder="Company Name" name="company">
+                                <label for="">Address:</label>
+                                <input class="contact_text" type="text" placeholder="Address" name="address">
+                                <label for="">State:</label>
+                                <input class="contact_text" type="text" placeholder="State" name="state">
+                                <label for="">Zip Code:</label>
+                                <input class="contact_text" type="text" placeholder="Zip Code" name="zipcode">
+                                <input class="contact_submit" type="submit" value="Get Free Samples">
+                            </div>
+                        </form>
+                        <div class="contact_details">
+                            <h1>Contact information</h1>
+                            <h3>Alpine Coffee </h3>
+                            <p> <span class="location"></span> 2860 S. Tejon St., Englewood, CO.  80110</p>
+                            <p> <span class="call"></span> 303-761-2500</p>
+                            <p> <span class="email"></span> sales@AlpineCoffee.com</p>
+                            <p> <span class="web"></span> www.hotelroomcoffee.com</p>
+                            <p> Get in touch with us any time</p>
+                        </div>
+                    </div>-->
+                    <div id="results">
+                        <form id="contactform" method="POST">
+                            <div class="contact_form_1">
+                                <div class="col-md-12">
+                                    <h3>GET IN TOUCH</h3>
+                                </div>
+                                <div class="col-md-12">
+                                    <input class="contact_text" type="text"  name="name" placeholder="Your name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input class="contact_text" type="text" placeholder="your phone number" name="phone" name="_gotcha" required>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <input class="contact_text" type="email" placeholder="Email Address" name="_replyto" placeholder="Your email" required>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <input class="contact_text" type="text" placeholder="Company Name" name="company" name="_gotcha" required>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <input class="contact_text" type="text" placeholder="Address" name="address" name="_gotcha" required>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <input class="contact_text" type="text" placeholder="State" name="state" name="_gotcha" required>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <input class="contact_text" type="text" placeholder="Zip Code" name="zipcode" name="_gotcha" required>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <input class="contact_submit" type="submit" value="Get Free Samples">
+                                </div>
+
+                            </div>
+                        </form>
+
+                        <script>
+                            var contactform =  document.getElementById('contactform');
+                            contactform.setAttribute('action', '//formspree.io/' + 'inbrain.bd' + '@' + 'gmail' + '.' + 'com');
+                        </script>
+                        <div class="contact_details_1">
+                            <h1>Contact information</h1>
+                            <h3>Alpine Coffee </h3>
+                            <p> <i class="fas fa-map-marker-alt"></i> 2860 S. Tejon St., Englewood, CO.  80110</p>
+                            <p> <i class="fas fa-phone"></i> 303-761-2500</p>
+                            <p> <i class="fas fa-envelope"></i> sales@AlpineCoffee.com</p>
+                            <p> <i class="fas fa-globe"></i> www.hotelroomcoffee.com</p>
+                            
+                            <p> Get in touch with us any time</p>
+                        </div>
+                    </div>
+
+
+                    
+            </div>
+        </div>
+    </section>
+   
+
+    <footer>
+        <div class="footer_top">
+            <div class="container">
+                <div class="col-md-2">
+                    <img src="images/footer_logo.png" alt="">
+                </div>
+                <div class="col-md-4">
+                    <h3>About Alpine Coffee</h3>
+                    <p>Cut Out The Middleman and Save Up to 35% On Your in Room Coffee</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="contact_cont"><i class="fas fa-phone"></i>303-761-2500</p>
+                    <p class="contact_cont"><i class="fas fa-envelope"></i> sales@AlpineCoffee.com</p>
+                    <p class="contact_cont"><i class="fas fa-map-marker-alt"></i> 2860 S. Tejon St., Englewood, CO. 80110</p>
+                </div>
+                <div class="col-md-3">
+                    <h3>Social Links</h3>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="container">
+                <p>© Copyright 2018. All rights reserved by <span>inBrain</span></p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!--js link-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!--js link-->
+</body>
+
+</html>

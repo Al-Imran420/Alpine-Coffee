@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Alpine Coffee</title>
+    <!--css link-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <!--css link-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src=“https://www.googletagmanager.com/gtag/js?id=UA-128983738-1“></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-128983738-1');
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="mobile_nav">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="">
+                </a>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="#">Price</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="quality.html">Quality</a></li>
+                    <li><a href="saving_calculator.html">Savings Calculator</a></li>
+                    <li><a href="guest_experience.html">Guest Experience</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <a href="contact.html" class="free_sample_button">Free Sample Today</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <img src="images/price_banner.jpg" alt="">
+        <div class="price_button">
+            <div class="container">
+                <a href="Hotel Prices.xlsx" download> <span></span> Download Price Sheet</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="k_kup_price">
+        <div class="container">
+            <h3>Hotel K-Cup Price</h3>
+            <p>Here are the hotel k-Cup price table</p>
+
+            <div class="tab">
+                <button class="tablinks active" onclick="openCity(event, 'Favorites')">Favorites</button>
+                <button class="tablinks" onclick="openCity(event, 'Decaf')">Decaf</button>
+                <button class="tablinks" onclick="openCity(event, 'Flavored')">Flavored</button>
+                <button class="tablinks" onclick="openCity(event, 'PremiumBlends')">Premium Blends</button>
+                <button class="tablinks" onclick="openCity(event, 'Steamers')">Steamers</button>
+            </div>
+
+            <div id="Favorites" class="tabcontent" style="display: block">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Picture</th>
+                            <th>Product Name</th>
+                            <th>Weight GR.</th>
+                            <th>Case Cnt</th>
+                            <th>Retail</th>
+                            <th>Retail</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> <img src="images/f-k-cup1.png" alt=""> </td>
+                            <td>Donut Blend</td>
+                            <td>10</td>
+                            <td>96</td>
+                            <td>$28.13</td>
+                            <td>0.29</td>
+                        </tr>
+                        <tr>
+                            <td> <img src="images/f-k-cup2.png" alt=""> </td>
+                            <td>BreakFast Blend</td>
+                            <td>10</td>
+                            <td>96</td>
+                            <td>$28.13</td>
+                            <td>0.29</td>
+                        </tr>
+                        <tr>
+                            <td> <img src="images/f-k-cup3.png" alt=""> </td>
+                            <td>Dark Estate</td>
+                            <td>10</td>
+                            <td>96</td>
+                            <td>$28.48</td>
+                            <td>0.29</td>
+                        </tr>
+                        <tr>
+                            <td> <img src="images/f-k-cup4.png" alt=""> </td>
+                            <td>French Roast</td>
+                            <td>10</td>
+                            <td>96</td>
+                            <td>$28.72</td>
+                            <td>0.29</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="Decaf" class="tabcontent">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Picture</th>
+                            <th>Product Name</th>
+                            <th>Weight GR.</th>
+                            <th>Case Cnt</th>
+                            <th>Retail</th>
+                            <th>Retail</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> <img src="images/Columbia_Decaf.png" alt=""> </td>
+                            <td>Columbia Decaf</td>
+                            <td>10</td>
+                            <td>96</td>
+                            <td>$29.11</td>
+                            <td>0.29</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="Flavored" class="tabcontent">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Picture</th>
+                            <th>Product Name</th>
+                            <th>Weight GR.</th>
+                            <th>Case Cnt</th>
+                            <th>Retail</th>
+                            <th>Retail</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> <img src="images/Hazelnut.png" alt=""> </td>
+                            <td>Hazelnut</td>
+                            <td>10</td>
+                            <td>96</td>
+                            <td>$28.80</td>
+                            <td>0.34</td>
+                        </tr>
+                        <tr>
+                            <td> <img src="images/Jamacian_Nuts.png" alt=""> </td>
+                            <td>Jamacian Nuts</td>
+                            <td>10</td>
+                            <td>96</td>
+                            <td>$29.55</td>
+                            <td>0.34</td>
+                        </tr>
+                        <tr>
+                            <td> <img src="images/French_Vanilla.png" alt=""> </td>
+                            <td>French Vanilla</td>
+                            <td>10</td>
+                            <td>96</td>
+                            <td>$29.11</td>
+                            <td>0.34</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="PremiumBlends" class="tabcontent">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Picture</th>
+                            <th>Product Name</th>
+                            <th>Weight GR.</th>
+                            <th>Case Cnt</th>
+                            <th>Retail</th>
+                            <th>Retail</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> <img src="images/Colombian_Supremo.png" alt=""> </td>
+                            <td>Colombian Supremo</td>
+                            <td>10</td>
+                            <td>96</td>
+                            <td>$32.89</td>
+                            <td>0.34</td>
+                        </tr>
+                        <tr>
+                            <td> <img src="images/Costa.png" alt=""> </td>
+                            <td>Costa</td>
+                            <td>10</td>
+                            <td>96</td>
+                            <td>$33.32</td>
+                            <td>0.34</td>
+                        </tr>
+                        <tr>
+                            <td> <img src="images/Kona_Island_Blend.png" alt=""> </td>
+                            <td>Kona Island Blend</td>
+                            <td>10</td>
+                            <td>96</td>
+                            <td>$35.11</td>
+                            <td>0.34</td>
+                        </tr>
+                        <tr>
+                            <td> <img src="images/Sumatra.png" alt=""> </td>
+                            <td>Sumatra</td>
+                            <td>10</td>
+                            <td>96</td>
+                            <td>$31.73</td>
+                            <td>0.34</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="Steamers" class="tabcontent">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Picture</th>
+                            <th>Product Name</th>
+                            <th>Weight GR.</th>
+                            <th>Case Cnt</th>
+                            <th>Retail</th>
+                            <th>Retail</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> <img src="images/Cocoa.png" alt=""> </td>
+                            <td>Cocoa</td>
+                            <td>15</td>
+                            <td>96</td>
+                            <td>$35.75</td>
+                            <td>0.34</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="hotel_filter_price">
+        <div class="container">
+            <h3>Hotel Filter Price</h3>
+            <p>Here are all kinds of Hotel Filter Products</p>
+
+            <div class="hotel_filter_price_box">
+                <div class="col-md-4">
+                    <div class="hotel_filter_price_img">
+                        <img src="images/BreakFastBlend.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="hotel_filter_table_title">
+                        <h1>01</h1>
+                        <p>Breakfast Blend</p>
+                    </div>
+                    <div class="hotel_filter_table">
+                        <div class="hotel_filter_table_area">
+
+                            <table class="table1">
+                                <thead>
+                                    <tr>
+                                        <th>Cups per pack</th>
+                                        <th>Weight per Pac Ounces</th>
+                                        <th>Weight Gr</th>
+                                        <th>Case Cnt</th>
+                                        <th>Cs Weight LBS</th>
+                                        <th>Blend Cost LB</th>
+                                        <th>Flavoring</th>
+                                        <th>Roasted LB</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>0.5</td>
+                                        <td>14</td>
+                                        <td>150</td>
+                                        <td>4.63576158940397</td>
+                                        <td>1.5</td>
+                                        <td>0</td>
+                                        <td>1.76</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>0.75</td>
+                                        <td>21.234375</td>
+                                        <td>150</td>
+                                        <td>7.03125</td>
+                                        <td>1.5</td>
+                                        <td>0</td>
+                                        <td>1.76</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>1.25</td>
+                                        <td>35.390625</td>
+                                        <td>150</td>
+                                        <td>11.71875</td>
+                                        <td>1.5</td>
+                                        <td>0</td>
+                                        <td>1.76</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>1.5</td>
+                                        <td>42.46875</td>
+                                        <td>150</td>
+                                        <td>14.0625</td>
+                                        <td>1.5</td>
+                                        <td>0</td>
+                                        <td>1.76</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>1.75</td>
+                                        <td>49.546875</td>
+                                        <td>100</td>
+                                        <td>10.9375</td>
+                                        <td>1.5</td>
+                                        <td>0</td>
+                                        <td>1.76</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>2</td>
+                                        <td>56.625</td>
+                                        <td>100</td>
+                                        <td>12.5</td>
+                                        <td>1.5</td>
+                                        <td>0</td>
+                                        <td>1.76</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table2">
+                                <thead>
+                                    <tr>
+                                        <th>Case Roasted Coffee</th>
+                                        <th>Filter Pac Film</th>
+                                        <th>Film / Bags</th>
+                                        <th>Out Box</th>
+                                        <th>150 count case COST</th>
+                                        <th>150 Count Retail</th>
+                                        <th>Cost per unit</th>
+                                        <th>Condiments</th>
+                                        <th>Condiment Cost</th>
+                                        <th>Total Condiment Cost per Case</th>
+                                        <th>Total Cost per Case With Condiments</th>
+                                        <th>Cost each</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>8.181</td>
+                                        <td>1.500</td>
+                                        <td>3.3</td>
+                                        <td>0.95</td>
+                                        <td>13.93US$</td>
+                                        <td>27.86US$</td>
+                                        <td>0.19US$</td>
+                                        <td>1 Crm, 1 Sug, 1 S&L 1 Stick</td>
+                                        <td>0.15</td>
+                                        <td>22.500</td>
+                                        <td>78.409</td>
+                                        <td>0.52</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12.408</td>
+                                        <td>1.500</td>
+                                        <td>3.3</td>
+                                        <td>0.95</td>
+                                        <td>18.16US$</td>
+                                        <td>36.32US$</td>
+                                        <td>0.24US$</td>
+                                        <td>2 Crm, 2 Sug, 1 S&L, 2 Stix</td>
+                                        <td>0.18</td>
+                                        <td>27.000</td>
+                                        <td>63.316</td>
+                                        <td>0.42</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20.680</td>
+                                        <td>1.500</td>
+                                        <td>3.3</td>
+                                        <td>0.95</td>
+                                        <td>26.43US$</td>
+                                        <td>52.86US$</td>
+                                        <td>0.35US$</td>
+                                        <td>3 Crm, 3 Sug, 2 S&L, 4 Stix</td>
+                                        <td>0.24</td>
+                                        <td>36.000</td>
+                                        <td>88.860</td>
+                                        <td>0.59</td>
+                                    </tr>
+                                    <tr>
+                                        <td>24.816</td>
+                                        <td>1.500</td>
+                                        <td>3.3</td>
+                                        <td>0.95</td>
+                                        <td>30.57US$</td>
+                                        <td>61.13US$</td>
+                                        <td>0.41US$</td>
+                                        <td>3 Crm, 3 Sug, 2 S&L, 4 Stix</td>
+                                        <td>0.24</td>
+                                        <td>36.000</td>
+                                        <td>97.132</td>
+                                        <td>0.65</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19.301</td>
+                                        <td>1.000</td>
+                                        <td>2.2</td>
+                                        <td>0.95</td>
+                                        <td>23.45US$</td>
+                                        <td>46.90US$</td>
+                                        <td>0.47US$</td>
+                                        <td>3 Crm, 3 Sug, 2 S&L, 4 Stix</td>
+                                        <td>0.24</td>
+                                        <td>24.000</td>
+                                        <td>70.903</td>
+                                        <td>0.71</td>
+                                    </tr>
+                                    <tr>
+                                        <td>22.059</td>
+                                        <td>1.000</td>
+                                        <td>2.2</td>
+                                        <td>0.95</td>
+                                        <td>26.21US$</td>
+                                        <td>52.42US$</td>
+                                        <td>0.52US$</td>
+                                        <td>3 Crm, 3 Sug, 2 S&L, 4 Stix</td>
+                                        <td>0.24</td>
+                                        <td>24.000</td>
+                                        <td>76.418</td>
+                                        <td>0.76</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hotel_filter_price_box">
+                <div class="col-md-4">
+                    <div class="hotel_filter_price_img">
+                        <img src="images/ColumbianMolina.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="hotel_filter_table_title">
+                        <h1>02</h1>
+                        <p>Columbian Molina</p>
+                    </div>
+                    <div class="hotel_filter_table">
+                        <div class="hotel_filter_table_area">
+
+                            <table class="table1">
+                                <thead>
+                                    <tr>
+                                        <th>Cups per pack</th>
+                                        <th>Weight per Pac Ounces</th>
+                                        <th>Weight Gr</th>
+                                        <th>Case Cnt</th>
+                                        <th>Cs Weight LBS</th>
+                                        <th>Blend Cost LB</th>
+                                        <th>Flavoring</th>
+                                        <th>Roasted LB</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>0.5</td>
+                                        <td>14</td>
+                                        <td>150</td>
+                                        <td>4.63576158940397</td>
+                                        <td>1.5</td>
+                                        <td>0</td>
+                                        <td>1.76</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>0.75</td>
+                                        <td>21.234375</td>
+                                        <td>150</td>
+                                        <td>7.03125</td>
+                                        <td>1.5</td>
+                                        <td>0</td>
+                                        <td>1.76</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>1.25</td>
+                                        <td>35.390625</td>
+                                        <td>150</td>
+                                        <td>11.71875</td>
+                                        <td>1.5</td>
+                                        <td>0</td>
+                                        <td>1.76</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>1.5</td>
+                                        <td>42.46875</td>
+                                        <td>150</td>
+                                        <td>14.0625</td>
+                                        <td>1.5</td>
+                                        <td>0</td>
+                                        <td>1.76</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>1.75</td>
+                                        <td>49.546875</td>
+                                        <td>100</td>
+                                        <td>10.9375</td>
+                                        <td>1.5</td>
+                                        <td>0</td>
+                                        <td>1.76</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>2</td>
+                                        <td>56.625</td>
+                                        <td>100</td>
+                                        <td>12.5</td>
+                                        <td>1.5</td>
+                                        <td>0</td>
+                                        <td>1.76</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table2">
+                                <thead>
+                                    <tr>
+                                        <th>Case Roasted Coffee</th>
+                                        <th>Filter Pac Film</th>
+                                        <th>Film / Bags</th>
+                                        <th>Out Box</th>
+                                        <th>150 count case COST</th>
+                                        <th>150 Count Retail</th>
+                                        <th>Cost per unit</th>
+                                        <th>Condiments</th>
+                                        <th>Condiment Cost</th>
+                                        <th>Total Condiment Cost per Case</th>
+                                        <th>Total Cost per Case With Condiments</th>
+                                        <th>Cost each</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>8.181</td>
+                                        <td>1.500</td>
+                                        <td>3.3</td>
+                                        <td>0.95</td>
+                                        <td>13.93US$</td>
+                                        <td>27.86US$</td>
+                                        <td>0.19US$</td>
+                                        <td>1 Crm, 1 Sug, 1 S&L 1 Stick</td>
+                                        <td>0.15</td>
+                                        <td>22.500</td>
+                                        <td>78.409</td>
+                                        <td>0.52</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12.408</td>
+                                        <td>1.500</td>
+                                        <td>3.3</td>
+                                        <td>0.95</td>
+                                        <td>18.16US$</td>
+                                        <td>36.32US$</td>
+                                        <td>0.24US$</td>
+                                        <td>2 Crm, 2 Sug, 1 S&L, 2 Stix</td>
+                                        <td>0.18</td>
+                                        <td>27.000</td>
+                                        <td>63.316</td>
+                                        <td>0.42</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20.680</td>
+                                        <td>1.500</td>
+                                        <td>3.3</td>
+                                        <td>0.95</td>
+                                        <td>26.43US$</td>
+                                        <td>52.86US$</td>
+                                        <td>0.35US$</td>
+                                        <td>3 Crm, 3 Sug, 2 S&L, 4 Stix</td>
+                                        <td>0.24</td>
+                                        <td>36.000</td>
+                                        <td>88.860</td>
+                                        <td>0.59</td>
+                                    </tr>
+                                    <tr>
+                                        <td>24.816</td>
+                                        <td>1.500</td>
+                                        <td>3.3</td>
+                                        <td>0.95</td>
+                                        <td>30.57US$</td>
+                                        <td>61.13US$</td>
+                                        <td>0.41US$</td>
+                                        <td>3 Crm, 3 Sug, 2 S&L, 4 Stix</td>
+                                        <td>0.24</td>
+                                        <td>36.000</td>
+                                        <td>97.132</td>
+                                        <td>0.65</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19.301</td>
+                                        <td>1.000</td>
+                                        <td>2.2</td>
+                                        <td>0.95</td>
+                                        <td>23.45US$</td>
+                                        <td>46.90US$</td>
+                                        <td>0.47US$</td>
+                                        <td>3 Crm, 3 Sug, 2 S&L, 4 Stix</td>
+                                        <td>0.24</td>
+                                        <td>24.000</td>
+                                        <td>70.903</td>
+                                        <td>0.71</td>
+                                    </tr>
+                                    <tr>
+                                        <td>22.059</td>
+                                        <td>1.000</td>
+                                        <td>2.2</td>
+                                        <td>0.95</td>
+                                        <td>26.21US$</td>
+                                        <td>52.42US$</td>
+                                        <td>0.52US$</td>
+                                        <td>3 Crm, 3 Sug, 2 S&L, 4 Stix</td>
+                                        <td>0.24</td>
+                                        <td>24.000</td>
+                                        <td>76.418</td>
+                                        <td>0.76</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hotel_filter_price_box">
+                <div class="col-md-4">
+                    <div class="hotel_filter_price_img">
+                        <img src="images/Dark-Estate.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="hotel_filter_table_title">
+                        <h1>03</h1>
+                        <p>Dark Estate</p>
+                    </div>
+                    <div class="hotel_filter_table">
+                        <div class="hotel_filter_table_area">
+
+                            <table class="table1">
+                                <thead>
+                                    <tr>
+                                        <th>Cups per pack</th>
+                                        <th>Weight per Pac Ounces</th>
+                                        <th>Weight Gr</th>
+                                        <th>Case Cnt</th>
+                                        <th>Cs Weight LBS</th>
+                                        <th>Blend Cost LB</th>
+                                        <th>Flavoring</th>
+                                        <th>Roasted LB</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>0.5</td>
+                                        <td>14</td>
+                                        <td>150</td>
+                                        <td>4.63576158940397</td>
+                                        <td>1.5</td>
+                                        <td>0</td>
+                                        <td>1.76</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>0.75</td>
+                                        <td>21.234375</td>
+                                        <td>150</td>
+                                        <td>7.03125</td>
+                                        <td>1.5</td>
+                                        <td>0</td>
+                                        <td>1.76</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>1.25</td>
+                                        <td>35.390625</td>
+                                        <td>150</td>
+                                        <td>11.71875</td>
+                                        <td>1.5</td>
+                                        <td>0</td>
+                                        <td>1.76</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>1.5</td>
+                                        <td>42.46875</td>
+                                        <td>150</td>
+                                        <td>14.0625</td>
+                                        <td>1.5</td>
+                                        <td>0</td>
+                                        <td>1.76</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>1.75</td>
+                                        <td>49.546875</td>
+                                        <td>100</td>
+                                        <td>10.9375</td>
+                                        <td>1.5</td>
+                                        <td>0</td>
+                                        <td>1.76</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>2</td>
+                                        <td>56.625</td>
+                                        <td>100</td>
+                                        <td>12.5</td>
+                                        <td>1.5</td>
+                                        <td>0</td>
+                                        <td>1.76</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table2">
+                                <thead>
+                                    <tr>
+                                        <th>Case Roasted Coffee</th>
+                                        <th>Filter Pac Film</th>
+                                        <th>Film / Bags</th>
+                                        <th>Out Box</th>
+                                        <th>150 count case COST</th>
+                                        <th>150 Count Retail</th>
+                                        <th>Cost per unit</th>
+                                        <th>Condiments</th>
+                                        <th>Condiment Cost</th>
+                                        <th>Total Condiment Cost per Case</th>
+                                        <th>Total Cost per Case With Condiments</th>
+                                        <th>Cost each</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>8.181</td>
+                                        <td>1.500</td>
+                                        <td>3.3</td>
+                                        <td>0.95</td>
+                                        <td>13.93US$</td>
+                                        <td>27.86US$</td>
+                                        <td>0.19US$</td>
+                                        <td>1 Crm, 1 Sug, 1 S&L 1 Stick</td>
+                                        <td>0.15</td>
+                                        <td>22.500</td>
+                                        <td>78.409</td>
+                                        <td>0.52</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12.408</td>
+                                        <td>1.500</td>
+                                        <td>3.3</td>
+                                        <td>0.95</td>
+                                        <td>18.16US$</td>
+                                        <td>36.32US$</td>
+                                        <td>0.24US$</td>
+                                        <td>2 Crm, 2 Sug, 1 S&L, 2 Stix</td>
+                                        <td>0.18</td>
+                                        <td>27.000</td>
+                                        <td>63.316</td>
+                                        <td>0.42</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20.680</td>
+                                        <td>1.500</td>
+                                        <td>3.3</td>
+                                        <td>0.95</td>
+                                        <td>26.43US$</td>
+                                        <td>52.86US$</td>
+                                        <td>0.35US$</td>
+                                        <td>3 Crm, 3 Sug, 2 S&L, 4 Stix</td>
+                                        <td>0.24</td>
+                                        <td>36.000</td>
+                                        <td>88.860</td>
+                                        <td>0.59</td>
+                                    </tr>
+                                    <tr>
+                                        <td>24.816</td>
+                                        <td>1.500</td>
+                                        <td>3.3</td>
+                                        <td>0.95</td>
+                                        <td>30.57US$</td>
+                                        <td>61.13US$</td>
+                                        <td>0.41US$</td>
+                                        <td>3 Crm, 3 Sug, 2 S&L, 4 Stix</td>
+                                        <td>0.24</td>
+                                        <td>36.000</td>
+                                        <td>97.132</td>
+                                        <td>0.65</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19.301</td>
+                                        <td>1.000</td>
+                                        <td>2.2</td>
+                                        <td>0.95</td>
+                                        <td>23.45US$</td>
+                                        <td>46.90US$</td>
+                                        <td>0.47US$</td>
+                                        <td>3 Crm, 3 Sug, 2 S&L, 4 Stix</td>
+                                        <td>0.24</td>
+                                        <td>24.000</td>
+                                        <td>70.903</td>
+                                        <td>0.71</td>
+                                    </tr>
+                                    <tr>
+                                        <td>22.059</td>
+                                        <td>1.000</td>
+                                        <td>2.2</td>
+                                        <td>0.95</td>
+                                        <td>26.21US$</td>
+                                        <td>52.42US$</td>
+                                        <td>0.52US$</td>
+                                        <td>3 Crm, 3 Sug, 2 S&L, 4 Stix</td>
+                                        <td>0.24</td>
+                                        <td>24.000</td>
+                                        <td>76.418</td>
+                                        <td>0.76</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hotel_filter_price_box">
+                <div class="col-md-4">
+                    <div class="hotel_filter_price_img">
+                        <img src="images/Decaf.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="hotel_filter_table_title">
+                        <h1>04</h1>
+                        <p>Decaf</p>
+                    </div>
+                    <div class="hotel_filter_table">
+                        <div class="hotel_filter_table_area">
+
+                            <table class="table1">
+                                <thead>
+                                    <tr>
+                                        <th>Cups per pack</th>
+                                        <th>Weight per Pac Ounces</th>
+                                        <th>Weight Gr</th>
+                                        <th>Case Cnt</th>
+                                        <th>Cs Weight LBS</th>
+                                        <th>Blend Cost LB</th>
+                                        <th>Flavoring</th>
+                                        <th>Roasted LB</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>0.5</td>
+                                        <td>14</td>
+                                        <td>150</td>
+                                        <td>4.63576158940397</td>
+                                        <td>1.5</td>
+                                        <td>0</td>
+                                        <td>1.76</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>0.75</td>
+                                        <td>21.234375</td>
+                                        <td>150</td>
+                                        <td>7.03125</td>
+                                        <td>1.5</td>
+                                        <td>0</td>
+                                        <td>1.76</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>1.25</td>
+                                        <td>35.390625</td>
+                                        <td>150</td>
+                                        <td>11.71875</td>
+                                        <td>1.5</td>
+                                        <td>0</td>
+                                        <td>1.76</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>1.5</td>
+                                        <td>42.46875</td>
+                                        <td>150</td>
+                                        <td>14.0625</td>
+                                        <td>1.5</td>
+                                        <td>0</td>
+                                        <td>1.76</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>1.75</td>
+                                        <td>49.546875</td>
+                                        <td>100</td>
+                                        <td>10.9375</td>
+                                        <td>1.5</td>
+                                        <td>0</td>
+                                        <td>1.76</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>2</td>
+                                        <td>56.625</td>
+                                        <td>100</td>
+                                        <td>12.5</td>
+                                        <td>1.5</td>
+                                        <td>0</td>
+                                        <td>1.76</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table2">
+                                <thead>
+                                    <tr>
+                                        <th>Case Roasted Coffee</th>
+                                        <th>Filter Pac Film</th>
+                                        <th>Film / Bags</th>
+                                        <th>Out Box</th>
+                                        <th>150 count case COST</th>
+                                        <th>150 Count Retail</th>
+                                        <th>Cost per unit</th>
+                                        <th>Condiments</th>
+                                        <th>Condiment Cost</th>
+                                        <th>Total Condiment Cost per Case</th>
+                                        <th>Total Cost per Case With Condiments</th>
+                                        <th>Cost each</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>8.181</td>
+                                        <td>1.500</td>
+                                        <td>3.3</td>
+                                        <td>0.95</td>
+                                        <td>13.93US$</td>
+                                        <td>27.86US$</td>
+                                        <td>0.19US$</td>
+                                        <td>1 Crm, 1 Sug, 1 S&L 1 Stick</td>
+                                        <td>0.15</td>
+                                        <td>22.500</td>
+                                        <td>78.409</td>
+                                        <td>0.52</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12.408</td>
+                                        <td>1.500</td>
+                                        <td>3.3</td>
+                                        <td>0.95</td>
+                                        <td>18.16US$</td>
+                                        <td>36.32US$</td>
+                                        <td>0.24US$</td>
+                                        <td>2 Crm, 2 Sug, 1 S&L, 2 Stix</td>
+                                        <td>0.18</td>
+                                        <td>27.000</td>
+                                        <td>63.316</td>
+                                        <td>0.42</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20.680</td>
+                                        <td>1.500</td>
+                                        <td>3.3</td>
+                                        <td>0.95</td>
+                                        <td>26.43US$</td>
+                                        <td>52.86US$</td>
+                                        <td>0.35US$</td>
+                                        <td>3 Crm, 3 Sug, 2 S&L, 4 Stix</td>
+                                        <td>0.24</td>
+                                        <td>36.000</td>
+                                        <td>88.860</td>
+                                        <td>0.59</td>
+                                    </tr>
+                                    <tr>
+                                        <td>24.816</td>
+                                        <td>1.500</td>
+                                        <td>3.3</td>
+                                        <td>0.95</td>
+                                        <td>30.57US$</td>
+                                        <td>61.13US$</td>
+                                        <td>0.41US$</td>
+                                        <td>3 Crm, 3 Sug, 2 S&L, 4 Stix</td>
+                                        <td>0.24</td>
+                                        <td>36.000</td>
+                                        <td>97.132</td>
+                                        <td>0.65</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19.301</td>
+                                        <td>1.000</td>
+                                        <td>2.2</td>
+                                        <td>0.95</td>
+                                        <td>23.45US$</td>
+                                        <td>46.90US$</td>
+                                        <td>0.47US$</td>
+                                        <td>3 Crm, 3 Sug, 2 S&L, 4 Stix</td>
+                                        <td>0.24</td>
+                                        <td>24.000</td>
+                                        <td>70.903</td>
+                                        <td>0.71</td>
+                                    </tr>
+                                    <tr>
+                                        <td>22.059</td>
+                                        <td>1.000</td>
+                                        <td>2.2</td>
+                                        <td>0.95</td>
+                                        <td>26.21US$</td>
+                                        <td>52.42US$</td>
+                                        <td>0.52US$</td>
+                                        <td>3 Crm, 3 Sug, 2 S&L, 4 Stix</td>
+                                        <td>0.24</td>
+                                        <td>24.000</td>
+                                        <td>76.418</td>
+                                        <td>0.76</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer_top">
+            <div class="container">
+                <div class="col-md-2">
+                    <img src="images/footer_logo.png" alt="">
+                </div>
+                <div class="col-md-4">
+                    <h3>About Alpine Coffee</h3>
+                    <p>Cut Out The Middleman and Save Up to 35% On Your in Room Coffee</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="contact_cont"><i class="fas fa-phone"></i>303-761-2500</p>
+                    <p class="contact_cont"><i class="fas fa-envelope"></i> sales@AlpineCoffee.com</p>
+                    <p class="contact_cont"><i class="fas fa-map-marker-alt"></i> 2860 S. Tejon St., Englewood, CO. 80110</p>
+                </div>
+                <div class="col-md-3">
+                    <h3>Social Links</h3>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="container">
+                <p>© Copyright 2018. All rights reserved by <span>inBrain</span></p>
+            </div>
+        </div>
+    </footer>
+    <!--<section class="price">
+        <div class="price_button">
+            <a href="contact.html">Free Sample Today</a>
+        </div>
+        <div class="price_cont">
+            <div class="container">
+                <li> <i class="fas fa-check"></i> We sell all equipment at cost.</li>
+                <li><i class="fas fa-check"></i> In Room Co ee Brewers.</li>
+                <li><i class="fas fa-check"></i> Both K Cup and 2 and 4 cup models.</li>
+                <li><i class="fas fa-check"></i> Filter Packs 2 and 4 cup comes in 100 count boxes.</li>
+                <li><i class="fas fa-check"></i> Our  lter pack program is similarly price to the K Cups.</li>
+                <li><i class="fas fa-check"></i> Free Freight 10 Box order and we provide free freight.</li>
+                <li><i class="fas fa-check"></i> Direct from the roaster pricing.</li>
+                <li><i class="fas fa-check"></i> We ship anywhere in US when minimums are met.</li>
+            </div>
+        </div>
+    </section>-->
+
+
+
+    <!--js link-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!--js link-->
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+</body>
+
+</html>
