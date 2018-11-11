@@ -18,7 +18,10 @@
 
         gtag('config', 'UA-128983738-1');
     </script>
-
+    <style>
+    	.btn-play{display:none !important;}
+        .hide{display: none}
+    </style>
 </head>
 
 <body>
@@ -48,12 +51,14 @@
 
         <div class="banner_top">
             <div class="container">
-                <!--<div class="col-sm-6">
-                    <div class="banner_video">
-                        <img src="images/banner_video.png" alt="">
+                <div class="col-sm-6">
+                    <div class="banner_video js-video-lead">
+                        <img class="hide" src="images/banner_video.png" alt="" style="cursor:pointer; display: block !important">
+                        <!--<iframe width="100%" height="100%" src="https://www.youtube.com/embed/TASLZ70WkrI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/gUkwMnRg1_o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                </div>-->
-                <div class="col-sm-12">
+                </div>
+                <div class="col-sm-6">
                     <div class="banner_cont">
                         <h1>"Cut Out The Middleman and Save Up to 35% On Your in Room Coffee"</h1>
                     </div>
@@ -64,11 +69,94 @@
             <a href="contact.html">Free Sample Today</a>
         </div>-->
     </section>
+    <footer class="footer_home">
+        <div class="container">
+            <p>© Copyright 2018. All rights reserved by <span>inBrain</span></p>
+        </div>
+    </footer>
 
     <!--js link-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <!--js link-->
+    <script>
+        function video_lead_play_state(element, active)
+        {
+            var $active = $(element).closest(".js-video-lead").find(".btn-play-active");
+            var $default = $(element).closest(".js-video-lead").find(".btn-play-default");
+
+            if (active) {
+                $active.show();
+                $default.hide();
+            } else {
+                $active.hide();
+                $default.show();
+            }
+        }
+        $(document).ready(function () {
+            // hide the videos and show the images
+            var $videos = $(".js-video-lead iframe");
+            $videos.hide();
+            $(".js-video-lead > img").not(".btn-play").show();
+
+            // position the video holders
+            $(".js-video-lead").css("position", "relative");
+
+            // prevent autoplay on load and add the play button
+            $videos.each(function (index, video) {
+                var $video = $(video);
+
+                // prevent autoplay due to normal navigation
+                var url = $video.attr("src");
+                if (url.indexOf("&autoplay") > -1) {
+                    url = url.replace("&autoplay=1", "");
+                } else {
+                    url = url.replace("?autoplay=1", "");
+                }
+                $video.attr("src", url).removeClass(
+                    "js-video-lead-autoplay"
+                );
+
+                // add and position the play button
+                var top = parseInt(parseFloat($video.css("height")) / 2) - 15;
+                var left = parseInt(parseFloat($video.css("width")) / 2) - 21;
+                var $btn_default = $("<img />").attr("src", "play-default.png").css({
+                    "position": "absolute",
+                    "top": top + "px",
+                    "left": left + "px",
+                    "z-index": 100
+                }).addClass("btn-play btn-play-default");
+                var $btn_active = $("<img />").attr("src", "play-active.png").css({
+                    "display": "none",
+                    "position": "absolute",
+                    "top": top + "px",
+                    "left": left + "px",
+                    "z-index": 110
+                }).addClass("btn-play btn-play-active");
+                $(".js-video-lead").append($btn_default).append($btn_active);
+            });
+
+
+            $(".js-video-lead img").on("click", function (event) {
+                var $holder = $(this).closest(".js-video-lead");
+                var $video = $holder.find("iframe");
+                var url = $video.attr("src");
+                url += (url.indexOf("?") > -1) ? "&" : "?";
+                url += "autoplay=1";
+                $video.addClass("js-video-lead-autoplay").attr("src", url);
+                $holder.find("img").remove();
+                $video.show();
+            });
+
+            $(".js-video-lead > img").on("mouseenter", function (event) {
+                video_lead_play_state(this, true);
+            });
+
+            $(".js-video-lead > img").not(".btn-play").on("mouseleave", function (event) {
+                video_lead_play_state(this, false);
+            });
+        });
+    </script>
 </body>
 
 </html>
