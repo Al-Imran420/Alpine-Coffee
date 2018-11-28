@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel="icon" href="images/glafy32.png" sizes="32x32">
+<link rel="icon" href="images/glafy48.png" sizes="48x48">
+<link rel="icon" href="images/glafy96.png" sizes="96x96">
+<link rel="icon" href="images/glafy144.png" sizes="144x144">
+<title>Alpine Coffee</title>
+    <!--css link-->
+    <link rel="stylesheet" type="text/css" href="css/style.landing.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!--css link-->
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128983738-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-128983738-1');
+    </script>
+    <style>
+    	.btn-play{display:none !important;}
+        .hide{display: none}
+    </style>
+
+<script>
+   $(function() {
+       $(".phonecell").click(function(){
+           var PhoneNumber = $(this).text();
+           PhoneNumber=PhoneNumber.replace("Phone:","");
+           window.location.href="tel://"+PhoneNumber;
+       });
+   });
+</script>
+
+
+</head>
+
+<body>
+
+    <div class="banner" id="free_sample">
+        <div class="container">
+            <div class="col-md-8">
+                <div class="banner_left">
+                    <a href="index.html"><img src="images/logo.png" alt=""></a>
+                    <p><i class="fas fa-phone"></i> Call  us  Today  at  303-761-2500 </p>
+                    <div class="call_button">
+                        <button class="btn btn-primary phone" onclick="window.open('tel:3037612500');"><i class="fas fa-phone"></i> Call Now</button>
+                    </div>
+
+                    <h3>Experience Love At First Sip</h3>
+                    <h1>Wholesale Organic Coffee Fuel 'em right!</h1>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="banner_form">
+                    <h3>Taste The Magic Yourself</h3>
+                    <p>Get in touch for a custom wholesale quote, and free sample.</p>
+
+                    <form id="contactform2" method="POST">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input class="form-control text" name="Name" type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input class="form-control text" name="Email" type="email" >
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input class="form-control text" name="Phone Number" type="number" >
+                        </div>
+                        <div class="form-group">
+                            <h3>What can we help you with?</h3>
+                            <input type="radio" name="What can we help you with?" value="Wholesale" checked>
+                            <label>Wholesale</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" name="What can we help you with?" value="Private Label">
+                            <label>Private Label</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" name="What can we help you with?" value="Something Else">
+                            <label>Something Else</label>
+                        </div>
+                        
+                        <input class="btn-primary btn" type="submit" value="Get In Touch">
+                    </form>
+                    <script>
+                        var contactform2 =  document.getElementById('contactform2');
+                        contactform2.setAttribute('action', '//formspree.io/' + 'inbrain.bd' + '@' + 'gmail' + '.' + 'com');
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section1">
+        <div class="container">
+            <h1>Why Alpine Coffee?</h1>
+            <p>Who are in extremely love with high quality coffee</p>
+            <div class="col-md-4 col-sm-6">
+                <div class="stack_street">
+                    <span></span>
+                    <p>We are a one stop shop for your entire coffee program from concept to final product.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="stack_street">
+                    <span></span>
+                    <p>Our white-glove customer service team will guide you through the entire process.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="stack_street">
+                    <span></span>
+                    <p>High quality, small-batch roasts, single-origin and signature blends.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="stack_street">
+                    <span></span>
+                    <p>Experience in helping develop brands and shops.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="stack_street">
+                    <span></span>
+                    <p>Low minimums & large capacity. </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="stack_street">
+                    <span></span>
+                    <p>Quick lead times.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section2">
+        <div class="container">
+            <h1>The Alpine Coffee</h1>
+            <p>Difference</p>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="difference">
+                    <img src="images/coffee_jug.png" alt="">
+                    <p>Our carefully curated artisanal small-batch roasts are packed in-house by dedicated coffee experts.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="difference">
+                    <img src="images/coffee_beans.png" alt="">
+                    <p>There are only organic coffee beans in our Signature Blends, without synthetic fertilizers or chemicals.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="difference">
+                    <img src="images/coffee_mug.png" alt="">
+                    <p>Strict quality control ensures that each batch lives up to our reputation and your expectations.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="difference">
+                    <img src="images/price_tag.png" alt="">
+                    <p>We buy our coffee in bulk straight from the source, cutting out the middleman and saving you money.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section3">
+        <div class="container">
+            <h1>ABOUT US</h1>
+            <p>Globally Connected by Large Network</p>
+
+            <div class="col-md-6">
+                <div class="about_us_img">
+                    <img src="images/about_us.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="about_us_cont">
+                    <p>
+                        Stack Street Coffee is a large capacity coffee roaster offering full service wholesale coffee  as well as private label coffee. We leverage our production efficiencies, 
+                        logistics capabilities and purchasing power to deliver the highest quality and lowest possible cost to our wholesale customers.
+                    </p>
+                    <p>
+                        Our coffee is available in a range of roasts, flavor varieties, package types and prices to fit your budget. Stack Street Coffee is based in the beautiful and historic Lower 
+                        Hudson Valley with operational capability across the United States.
+                    </p>
+                    <p>
+                        We offer a wide range of options that support environmentally responsible farming and packaging practices while saving you money! 
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section4">
+        <div class="container">
+            <div class="row">
+                <span>Don't wait to talk to New York's top wholesale coffee roaster</span>
+                <a href="contact.html">FREE Sample Today</a>
+            </div>
+            <div class="row">
+                <h3>OR</h3>
+            </div>
+            <div class="row">
+                <p> <a href="contact.html">Contact Us</a>  For A Consultation</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section5">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>Stack Street wholesale coffee services are an ideal fit for every business that wants to make the best impression on its customers, employees and clients, including (but not limited to: )</p>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="service_box">
+                    <span><img src="images/coffee_cup_i.png" alt=""></span>
+                    <p>Cafes and Coffee shops</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="service_box">
+                    <span><img src="images/resturent_i.png" alt=""></span>
+                    <p>Restaurants</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="service_box">
+                    <span><img src="images/hotels_i.png" alt=""></span>
+                    <p>Hotels</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="service_box">
+                    <span><img src="images/office_i.png" alt=""></span>
+                    <p>Offices</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="service_box">
+                    <span><img src="images/institute_i.png" alt=""></span>
+                    <p>Healthcare Institutions</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="service_box">
+                    <span><img src="images/collage_i.png" alt=""></span>
+                    <p>Colleges</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="service_box">
+                    <span><img src="images/gas_station_i.png" alt=""></span>
+                    <p>Gas stations</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="service_box">
+                    <span><img src="images/stor_i.png" alt=""></span>
+                    <p>Convenience stores</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="service_box">
+                    <span><img src="images/gift_i.png" alt=""></span>
+                    <p>Gift shops</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="service_box">
+                    <span><img src="images/cafetries_i.png" alt=""></span>
+                    <p>Cafeterias</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="service_box">
+                    <span><img src="images/hospital_i.png" alt=""></span>
+                    <p>Hospitals</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="service_box">
+                    <span><img src="images/grocers_i.png" alt=""></span>
+                    <p>Specialty grocers</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section6">
+        <div class="container">
+            <div class="client_feed">
+                <span></span>
+                <p>
+                    Our model is unique because it allows us to build mutually beneficial and respectful relationships with individual producers and cooperatives. 
+                    This ensures the highest levels of quality and enables more people around the world to earn a fair living wage.
+                </p>
+                <h4>-Yehuda</h4>
+                <h2>CEO of Stack Coffee</h2>
+                <img src="images/client_feed_img.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="section7">
+        <div class="container">
+            <div class="free_sample_today">
+                <h1>Ready to take your coffee game Now?</h1>
+                <a href="contact.html">FREE Sample Today</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer_top">
+            <div class="container">
+                <div class="col-md-2">
+                    <a href="#"><img src="images/logo.png" alt=""></a>
+                </div>
+                <div class="col-md-4">
+                    <h3>About Alpine Coffee</h3>
+                    <p>Cut Out The Middleman and Save Up to 35% On Your in Room Coffee</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="contact_cont"><i class="fas fa-phone"></i>303-761-2500</p>
+                    <p class="contact_cont"><i class="fas fa-envelope"></i> sales@AlpineCoffee.com</p>
+                    <p class="contact_cont"><i class="fas fa-map-marker-alt"></i> 2860 S. Tejon St., Englewood, CO. 80110</p>
+                </div>
+                <div class="col-md-3">
+                    <h3>Social Links</h3>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="container">
+                <p>© Copyright 2018. All rights reserved by <span>inBrain</span></p>
+            </div>
+        </div>
+    </footer>
+    <!--js link-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!--js link-->
+</body>
+
+</html>
