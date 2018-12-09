@@ -1814,6 +1814,7 @@ display:none;
   height: auto;
   float: left;
   position: relative;
+  margin-bottom: 30px;
 }
 .product_cont h1{
   font-size: 24px;
@@ -2011,6 +2012,18 @@ display:none;
 }
 /*End product_Page*/
 
+/*trade_page*/
+
+.trade_body{
+  width: 100%;
+  min-height: 600px;
+  float: left;
+  text-align: center;
+}
+.trade_body h1{
+  margin-top: 100px;
+}
+/*end trade page*/
 
 /*Start Responcive*/
 
@@ -2067,5 +2080,23 @@ display:none;
   }
   .banner_cont h1{
     font-size: 20px;
+  }
+}
+
+@media(min-width:991px){
+  .sm_d_s{
+    display: none;
+  }
+  .sm_d_h{
+    display: block;
+  }
+}
+@media(max-width:990px){
+  .sm_d_s{
+    display: block;
+    margin-bottom: 30px;
+  }
+  .sm_d_h{
+    display: none;
   }
 }
