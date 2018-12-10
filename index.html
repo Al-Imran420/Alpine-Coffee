@@ -12,6 +12,11 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="js/prefixfree.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/r_nav.css">
+
     <!--css link-->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src=“https://www.googletagmanager.com/gtag/js?id=UA-128983738-1“></script>
@@ -30,7 +35,7 @@
 
 <body>
 
-    <header>
+    <!--<header>
         <div class="container">
             <div class="mobile_nav">
                 <a href="index.html" class="logo">
@@ -42,7 +47,7 @@
                     <li><a class="active" href="#">Home</a></li>
                     <li><a href="price.html">Price</a></li>
                     <li><a href="product.html">Product</a></li>
-                    <!--<li><a href="#">Office Coffee</a></li>-->
+                    <li><a href="#">Office Coffee</a></li>
                     <li><a href="quality.html">Quality</a></li>
                     <li><a href="direct-trade.html">Direct Trade</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
@@ -50,7 +55,31 @@
                 <a href="contact.html" class="free_sample_button">Free Sample Today</a>
             </div>
         </div>
+    </header>-->
+    <header>
+        <div class="container">
+            <nav> 
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="">
+                </a>
+                <a id="resp-menu" class="responsive-menu" href="#"><i class="fa fa-reorder"></i> Menu</a>
+                <ul class="menu">
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="#">Office Coffee<i class="fa fa-angle-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="price.html">Price</a></li>
+                        <li><a href="product.html">Product</a></li>
+                    </ul>
+                    </li>
+                    <li><a  href="quality.html">Quality</a></li>
+                    <li><a  href="direct-trade.html">Direct Trade</a></li>
+                    <li><a  href="contact.html">Contact Us</a></li>
+                </ul>
+                <a href="contact.html" class="free_sample_button">Free Sample Today</a>
+            </nav>
+        </div>
     </header>
+
     <section class="home">
 
         <div class="banner_top">
@@ -61,11 +90,21 @@
                         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/gUkwMnRg1_o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>-->
-                <div class="col-sm-12">
+                <div class="col-sm-4">
                     <div class="banner_cont">
-                        <h1>"Cut Out The Middleman and Save Up to 35% On Your"</h1>
+                        <h1>Cut Out<br> <mark class="a">The Middleman</mark><br> <mark class="b">and</mark><br> <mark class="c">Save<br> Up to <b class="d">35%</b> </mark></h1>
                     </div>
                 </div>
+                <div class="col-sm-8">
+                    <div class="smaple_body">
+                        <img class="product_type_1" src="images/frac_pack.jpg" alt="">
+                        <img class="product_type_2" src="images/k_kup.jpg" alt="">
+                    </div>
+                    <div class="sample_button">
+                        <a href="contact.html" target="_blink">Free Sample Today</a>
+                    </div>
+                </div>
+
             </div>
         </div>
         <!--<div class="banner_button">
@@ -82,6 +121,26 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <!--js link-->
+
+    <script>
+        $(document).ready(function(){ 
+            var touch 	= $('#resp-menu');
+            var menu 	= $('.menu');
+        
+            $(touch).on('click', function(e) {
+            e.preventDefault();
+            menu.slideToggle();
+            });
+            
+            $(window).resize(function(){
+            var w = $(window).width();
+            if(w > 767 && menu.is(':hidden')) {
+                menu.removeAttr('style');
+            }
+            });
+            
+        });
+    </script>
     <script>
         function video_lead_play_state(element, active)
         {
