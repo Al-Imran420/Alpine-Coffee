@@ -32,6 +32,40 @@
     	.btn-play{display:none !important;}
         .hide{display: none}
     </style>
+
+
+<style>
+.cardContainer {
+    position: relative;
+    top: 400px;
+    background-color: #333;
+    height: 100%;
+    box-shadow: -1px -1px 7px black;
+}
+/*.active {
+    display: block !important;
+}*/
+.questionCard {
+    display: none;
+}
+.navCard {
+    max-width: 400px;
+    min-width: 60px;
+    margin: 0 auto;
+    border-color: #1b6bb9;
+    z-index: 1;
+    padding: 20px;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 1px 1px 7px;
+    border: rgba(128, 128, 128, 0.35);
+    position: inherit;
+    top: -270px;
+    background-color: #1b6bb9;
+    align-content: center;
+}
+</style>
+
 </head>
 
 <body>
@@ -45,27 +79,125 @@
                 <ul class="menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#">Office Coffee<i class="fa fa-angle-down"></i></a>
-                    <ul class="sub-menu">
-                        <li><a href="price.html">Price</a></li>
-                        <li><a href="product.html">Product</a></li>
-                    </ul>
+                        <ul class="sub-menu">
+                            <li><a href="price.html">Price</a></li>
+                            <li><a href="product.html">Product</a></li>
+                        </ul>
                     </li>
                     <li><a href="quality.html">Quality</a></li>
-                    <li><a class="active" href="#">Direct Trade</a></li>
+                    <li><a href="direct-trade.html">Direct Trade</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
-                <a href="free-sample.html" class="free_sample_button">Free Sample Today</a>
+                <a href="#" class="free_sample_button">Free Sample Today</a>
             </nav>
         </div>
     </header>
 
-    <section class="banner">
-        <img src="images/pro_banner.jpg" alt="">
-    </section>
-
-    <section class="trade_body">
+    <section class="free_sample_section">
         <div class="container">
-            <h1>Waiting on George To provide copy.....</h1>
+
+            <div class="step_section">
+                <div class="step1 active_section"> <span class="active_section">1</span> </div>
+                <div class="step2"> <span>2</span> </div>
+                <div class="step3"> <span>3</span> </div>
+                <div class="step4"> <span>4</span> </div>
+            </div>
+            <div class="step_section_header">
+                <h1>Order Free Sample</h1>
+                <span></span>
+            </div>
+
+            <div class="step_content_area">
+                <div class="step_content1 questionCard" style="display: block">
+                    <h3>Choose Your Product</h3>
+                    <div class="col-md-6">
+                        <img src="images/k_kup.jpg" alt="">
+                        <h2>You Will Get</h2>
+                        <ul>
+                            <li><span></span> 2 Dark Chocolate</li>
+                            <li><span></span> 2 Columbian</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/frac_pack.jpg" alt="">
+                        <h2>You Will Get</h2>
+                        <ul>
+                            <li><span></span> 4 Rosta Rican</li>
+                            <li><span></span> 4 French Toast</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="step_content2 questionCard">
+                    <ul>
+                        <h3>Select your industry:</h3>
+                        <li>
+                            <input id="office" type="radio" value="Office Coffee/OCS" name="radio">
+                            <label for="office">Office Coffee/OCS</label>
+                        </li>
+                        <li>
+                            <input id="hotels" type="radio" value="Hotels/Hospitability" name="radio">
+                            <label for="hotels">Hotels/Hospitability</label>
+                        </li>
+                        <li>
+                            <input id="wholesale" type="radio" value="Wholesale Buyer (Local office, etc)" name="radio">
+                            <label for="wholesale">Wholesale Buyer (Local office, etc)</label>
+                        </li>
+                        <li>
+                            <input id="other" type="radio" value="Other" name="radio">
+                            <label for="other">Other</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="step_content3 questionCard">
+                    <h3>Mailing Address</h3>
+                    <div class="col-md-6">
+                        <label for="">First Name*</label>
+                        <input type="text" name="F_Name" placeholder="First Name">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="">Last Name*</label>
+                        <input type="text" name="L_Name" placeholder="Last Name">
+                    </div>
+                    <div class="col-md-12">
+                        <label for="">Address*</label>
+                        <input type="text" name="L_Name" placeholder="Address">
+                    </div>
+                    <div class="col-md-12">
+                        <label for="">Town/City*</label>
+                        <input type="text" name="L_Name" placeholder="Town/City">
+                    </div>
+                    <div class="col-md-12">
+                        <label for="">State/Province*</label>
+                        <select placeholder="State/Province" id="mySelect">
+                            <option value="volvo">State1</option>
+                            <option value="saab">State2</option>
+                            <option value="mercedes">State3</option>
+                            <option value="audi">State4</option>
+                        </select>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="">Postal Code/Zip*</label>
+                        <input type="text" name="L_Name" placeholder="Postal Code/Zip">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="">Phone</label>
+                        <input type="text" name="F_Name" placeholder="+0 000 000 0000">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="">Email Address*</label>
+                        <input type="text" name="L_Name" placeholder="yourmail@gmail.com">
+                    </div>
+                </div>
+                <div class="step_content4 questionCard">
+                    <h3>Thanks For Order Your Free Sample</h3>
+                </div>
+
+            </div>
+            <div class="step_navigation">
+                <a id="prev" onclick="previous()" style="display: none">Previous</a>
+                <a id="nxt" onclick="next()">Next</a>
+            </div>
+            
         </div>
     </section>
 
@@ -106,6 +238,52 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <!--js link-->
+
+<script>
+    var qlist = document.getElementsByClassName("questionCard");
+    var pr = document.getElementById('prev');
+    var nx = document.getElementById('nxt');
+    var i = 0;
+    var length = qlist.length;
+    function previous () {
+        if (i == 1) {
+            alert('Previous is empty now !');
+            return;
+        }
+        i--
+        qlist[i].style.display = 'none';
+        if (i != 0) {
+            qlist[i - 1].style.display = 'block';
+        }
+
+        if(i == 1){
+            pr.style.display = 'none'
+        }
+        if(i < length){
+            nx.style.display = 'inline-block'
+        }
+    }
+    function  next () {
+        if (i == length) {
+            alert('No More Options!');
+            return;
+        }
+        qlist[i].style.display = 'block';
+        if (i != 0) {
+            qlist[i-1].style.display = 'none';
+        }
+        i++
+
+        if(i > 1){
+            pr.style.display = 'inline-block'
+        }
+        if(i == length){
+            nx.style.display = 'none'
+        }
+    }
+</script>
+
+
     <script>
         $(document).ready(function(){ 
             var touch 	= $('#resp-menu');
@@ -203,6 +381,7 @@
             });
         });
     </script>
+
 </body>
 
 </html>

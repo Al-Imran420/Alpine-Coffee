@@ -1722,7 +1722,6 @@ padding: 20px;
 
 
 /*Update Contact Us*/
-
 .contact_form_1{
   width: 60%;
   float: left;
@@ -2159,6 +2158,240 @@ display:none;
   margin-top: 100px;
 }
 /*end trade page*/
+
+/*Start Free Sample Page*/
+.free_sample_section{
+  width: 100%;
+  float: left;
+  position: relative;
+  min-height: 400px;
+  margin: 60px 0;
+}
+.step_section{
+  display: inline-flex;
+  width: 100%;
+  float: left;
+  margin: 50px 0;
+}
+.step_section div{
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid #cccccc;
+}
+.step_section div span{
+  width: 40px;
+  height: 40px;
+  border: 2px solid #cccccc;
+  display: inline-block;
+  line-height: 36px;
+  border-radius: 50px;
+  color: #cccccc;
+  position: absolute;
+  background: #ffffff;
+  margin-left: -20px;
+  margin-top: -20px;
+}
+.active_section{
+  border-color: #b89d64 !important;
+  color: #b89d64 !important;
+}
+.step1{
+  width: 100%;
+  text-align: center;
+  /*border-bottom: 1px solid red;*/
+}
+.step2{
+  width: 100%;
+  text-align: center;
+  /*border-bottom: 1px solid black;*/
+}
+.step3{
+  width: 100%;
+  text-align: center;
+  /*border-bottom: 1px solid black;*/
+}
+.step4{
+  width: 100%;
+  text-align: center;
+  /*border-bottom: 1px solid black;*/
+}
+.step_section_header{
+  width: 100%;
+  float: left;
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.step_section_header h1{
+  font-size: 30px;
+  color: #2f1600;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.step_section_header span{
+  width: 100px;
+  height: 3px;
+  background: #2f1600;
+  margin-top: 10px;
+  display: block;
+  margin: auto;
+}
+
+.step_content_area{
+  width: 100%;
+  float: left;
+  position: relative;
+}
+.step_content1{
+  width: 100%;
+  float: left;
+  position: relative;
+  padding: 0 100px;
+}
+.step_content1 h3{
+  text-align: center;
+  text-transform: uppercase;
+  color: #2f1600;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.step_content1 img{
+  max-width: 400px;
+  display: block;
+  margin: auto;
+}
+.step_content1 h2{
+  font-size: 34px;
+  color: #2f1600;
+  font-weight: 500;
+  margin-top: 20px;
+  text-align: center;
+}
+.step_content1 ul{
+  width: 100%;
+  float: left;
+  padding-left: 120px;
+}
+.step_content1 ul li{
+  width: 100%;
+  float: left;
+  list-style: none;
+  margin: 5px 0;
+}
+.step_content1 ul li span{
+  width: 19px;
+  height: 19px;
+  float: left;
+  margin-right: 10px;
+  background: url(../images/li_icon.png) no-repeat center center;
+}
+.step_navigation{
+  width: 100%;
+  float: left;
+  text-align: center;
+  margin: 20px 0;
+}
+.step_navigation a{
+  width: 100px;
+  text-align: center;
+  padding: 10px 20px;
+  background: #b89d64;
+  color: #ffffff;
+  display: inline-block;
+}
+.step_navigation a:hover{
+  color: #ffffff;
+  text-decoration: none;
+  outline: none;
+}
+.step_navigation a:focus{
+  color: #ffffff;
+  text-decoration: none;
+  outline: none;
+}
+
+.step_content2{
+  width: 100%;
+  float: left;
+  position: relative;
+  padding: 0 100px;
+}
+.step_content2 h3{
+  text-transform: uppercase;
+  color: #2f1600;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.step_content2 ul{
+  width: 270px;
+  display: block;
+  margin: auto;
+}
+.step_content2 ul li{
+  width: 100%;
+  float: left;
+  list-style: none;
+  margin: 5px 0;
+}
+
+.step_content3{
+  width: 100%;
+  float: left;
+  position: relative;
+  padding: 0 250px;
+}
+.step_content3 h3{
+  text-transform: uppercase;
+  color: #2f1600;
+  font-size: 18px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.step_content3 label{
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+  margin-top: 20px;
+}
+.step_content3 input, select{
+  width: 100%;
+  border: 1px solid #c2c2c2;
+  padding: 10px;
+  background: none;
+  outline: none;
+  height: 40px;
+}
+.step_content3 select:not([multiple]) {
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-position: right 50%;
+  background-repeat: no-repeat;
+  background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1"><path d="M4 8L0 4h8z"/></svg>');
+  padding: .5em;
+  padding-right: 1.5em
+}
+#mySelect {
+    border-radius: 0
+}
+
+.step_content4{
+  width: 100%;
+  float: left;
+  position: relative;
+  padding: 0 250px;
+}
+.step_content4 h3{
+  font-size: 40px;
+  width: 100%;
+  text-align: center;
+  border: 2px solid #c0a76f;
+  padding: 100px;
+  color: #c0a76f;
+}
+/*End Free Sample Page*/
 
 /*Start Responcive*/
 
