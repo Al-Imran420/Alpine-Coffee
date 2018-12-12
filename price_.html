@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel="icon" href="images/glafy32.png" sizes="32x32">
+<link rel="icon" href="images/glafy48.png" sizes="48x48">
+<link rel="icon" href="images/glafy96.png" sizes="96x96">
+<link rel="icon" href="images/glafy144.png" sizes="144x144">
+<title>Alpine Coffee</title>
+    <!--css link-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    
+    <!--<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">-->
+    <script src="js/prefixfree.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/r_nav.css">
+    <!--css link-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src=“https://www.googletagmanager.com/gtag/js?id=UA-128983738-1“></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-128983738-1');
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav> 
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="">
+                </a>
+                <a id="resp-menu" class="responsive-menu" href="#"><i class="fa fa-reorder"></i> Menu</a>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="#">Office Coffee<i class="fa fa-angle-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Price</a></li>
+                        <li><a href="product.html">Product</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="quality.html">Quality</a></li>
+                    <!--<li><a href="direct-trade.html">Direct Trade</a></li>-->
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <a href="free-sample.html" class="free_sample_button">Free Sample Today</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner">
+        <img src="images/price_banner.jpg" alt="">
+        <div class="price_button">
+            <div class="container">
+                <a href="AlpineCoffeeWholesalePriceSheet.pdf" download> <span></span> Download Price Sheet</a>
+            </div><br>
+            <div class="container">
+                <a href="AlpineCoffeeWholesalePriceSheet.pdf"> <span></span> View Price Sheet</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer_top">
+            <div class="container">
+                <div class="col-md-2">
+                    <img src="images/footer_logo.png" alt="">
+                </div>
+                <div class="col-md-4">
+                    <h3>About Alpine Coffee</h3>
+                    <p>Cut Out The Middleman and Save</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="contact_cont"><i class="fas fa-phone"></i>303-761-2500</p>
+                    <p class="contact_cont"><i class="fas fa-envelope"></i> sales@AlpineCoffee.com</p>
+                    <p class="contact_cont"><i class="fas fa-map-marker-alt"></i> 2860 S. Tejon St., Englewood, CO. 80110</p>
+                </div>
+                <div class="col-md-3">
+                    <h3>Social Links</h3>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="container">
+                <p>© Copyright 2018. All rights reserved by <span>inBrain</span></p>
+            </div>
+        </div>
+    </footer>
+    <!--<section class="price">
+        <div class="price_button">
+            <a href="contact.html">Free Sample Today</a>
+        </div>
+        <div class="price_cont">
+            <div class="container">
+                <li> <i class="fas fa-check"></i> We sell all equipment at cost.</li>
+                <li><i class="fas fa-check"></i> In Room Co ee Brewers.</li>
+                <li><i class="fas fa-check"></i> Both K Cup and 2 and 4 cup models.</li>
+                <li><i class="fas fa-check"></i> Filter Packs 2 and 4 cup comes in 100 count boxes.</li>
+                <li><i class="fas fa-check"></i> Our  lter pack program is similarly price to the K Cups.</li>
+                <li><i class="fas fa-check"></i> Free Freight 10 Box order and we provide free freight.</li>
+                <li><i class="fas fa-check"></i> Direct from the roaster pricing.</li>
+                <li><i class="fas fa-check"></i> We ship anywhere in US when minimums are met.</li>
+            </div>
+        </div>
+    </section>-->
+
+
+
+    <!--js link-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!--js link-->
+    <script>
+        $(document).ready(function(){ 
+            var touch 	= $('#resp-menu');
+            var menu 	= $('.menu');
+        
+            $(touch).on('click', function(e) {
+            e.preventDefault();
+            menu.slideToggle();
+            });
+            
+            $(window).resize(function(){
+            var w = $(window).width();
+            if(w > 767 && menu.is(':hidden')) {
+                menu.removeAttr('style');
+            }
+            });
+            
+        });
+    </script>
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+</body>
+
+</html>

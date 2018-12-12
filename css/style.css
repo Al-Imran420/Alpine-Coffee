@@ -659,7 +659,7 @@ header{
   float: none;
   top: 36px;
   left: 60px;
-  max-width: 210px;
+  max-width: 240px;
   line-height: 40px;
 }
 .hotel_filter_table{
@@ -2193,7 +2193,9 @@ display:none;
 }
 .active_section{
   border-color: #b89d64 !important;
-  color: #b89d64 !important;
+  background: #b89d64 !important;
+  color: #ffffff !important;
+  font-weight: bold;
 }
 .step1{
   width: 100%;
@@ -2285,10 +2287,24 @@ display:none;
   margin-right: 10px;
   background: url(../images/li_icon.png) no-repeat center center;
 }
+/* HIDE RADIO */
+.step_content1 [type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/* IMAGE STYLES */
+.step_content1 [type=radio] + img {
+  cursor: pointer;
+}
+/* CHECKED STYLES */
+.step_content1 [type=radio]:checked + img {
+  outline: 5px solid #341600;
+}
 .step_navigation{
   width: 100%;
   float: left;
-  text-align: center;
   margin: 20px 0;
 }
 .step_navigation a{
@@ -2298,6 +2314,17 @@ display:none;
   background: #b89d64;
   color: #ffffff;
   display: inline-block;
+  cursor: pointer;
+}
+.step_navigation #nxt{
+  width: 100px;
+  text-align: center;
+  padding: 10px 20px;
+  background: #b89d64;
+  color: #ffffff;
+  display: inline-block;
+  cursor: pointer;
+  float: right;
 }
 .step_navigation a:hover{
   color: #ffffff;
@@ -2363,6 +2390,14 @@ display:none;
   outline: none;
   height: 40px;
 }
+.step_content3 .form_submit{
+  width: 120px;
+  border: 1px solid #b89d64;
+  background: #b89d64 !important;
+  color: #ffffff;
+  margin-top: 15px;
+}
+
 .step_content3 select:not([multiple]) {
   width: 100%;
   -webkit-appearance: none;
@@ -2395,6 +2430,11 @@ display:none;
 
 /*Start Responcive*/
 
+@media (max-width: 1199px) {
+  .step_content1 img{
+    width: 100%;
+  }
+}
 @media (max-width: 991px) {
   .free_sample_button{
     right: 80px !important;
@@ -2420,6 +2460,9 @@ display:none;
   .banner_cont h1{
     font-size: 30px;
   }
+  .step_content3{
+    padding: 0px;
+  }
 }
 @media (max-width: 767px) {
   .section_1_area{
@@ -2441,6 +2484,16 @@ display:none;
   .banner_video{
     height: auto;
   }
+  .banner_cont{
+    float: inherit;
+    text-align: center;
+  }
+  .sample_button{
+    margin: 0;
+  }
+  .step_content1 label{
+    width: 100%;
+  }
 }
 
 @media (max-width: 679px) {
@@ -2451,6 +2504,17 @@ display:none;
   }
   .banner_cont h1{
     font-size: 20px;
+  }
+}
+@media (max-width: 520px) {
+  .step_content1{
+    padding: inherit;
+  }
+  .step_content1 ul{
+    padding-left: 0px;
+  }
+  .step_content1 h2{
+    text-align: inherit;
   }
 }
 

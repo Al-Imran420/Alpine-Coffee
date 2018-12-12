@@ -12,10 +12,10 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
-    <link rel="stylesheet" type="text/css" href="view.css" media="all">
-    <script type="text/javascript" src="view.js"></script>    
-<!--<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <!--<link rel="stylesheet" type="text/css" href="view.css" media="all">
+    <script type="text/javascript" src="view.js"></script>    -->
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">-->
 
     <script src="js/prefixfree.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/r_nav.css">
@@ -96,213 +96,201 @@
 
     <section class="free_sample_section">
         <div class="container">
-            <!--
             <div class="step_section">
-                <div class="step1 active_section"> <span class="active_section">1</span> </div>
-                <div class="step2"> <span>2</span> </div>
-                <div class="step3"> <span>3</span> </div>
-                <div class="step4"> <span>4</span> </div>
+                <div class="active_section"> <span class="active_section">1</span> </div>
+                <div id="line2"><span id="span2">2</span></div>
+                <div id="line3"><span id="span3">3</span></div>
             </div>
-        -->
-            <div class="step_section_header">
-                <h1>Order Free Sample</h1>
-                <span></span>
-            </div>
-
-            <div class="step_content_area">
-                <div class="step_content1 questionCard" style="display: block">
-                    <h3>Choose Your Product</h3>
-                    <div class="col-md-6">
-                        <img src="images/k_kup.jpg" alt="">
-                        <h2>You Will Get</h2>
-                        <ul>
-                            <li><span></span> 2 Donut Blend</li>
-                            <li><span></span> 2 Dark Estate</li>
-                            <li><span></span> 2 Hazelnut</li>
-                            <li><span></span> 2 Costa Rican</li>
-                            <li><span></span> 2 Cocoa</li>
-                            <li><span></span> 2 Breakfast Blend</li>
-                            <li><span></span> 2 French Roast</li>
-                            <li><span></span> 2 French Vanilla</li>
-                            <li><span></span> 2 Dark Sumatra</li>
-                            <li><span></span> 2 Columbian Supremo</li>
-                            <li><span></span> 2 Decaf</li>
-                            <li><span></span> 2 Jamacian Me Nuts</li>
-                            <li><span></span> 2 Kona Island Blend
-                        </ul>
-                    </div>
-                    <div class="col-md-6">
-                        <img src="images/frac_pack.jpg" alt="">
-                        <h2>You Will Get</h2>
-                        <ul>
-                            <li><span></span> 2 Safari</li>
-                            <li><span></span> 2 Breakfast Blend</li>
-                            <li><span></span> 2 Columbian Molina</li>
-                            <li><span></span> 2 Decaf</li>
-                            <li><span></span> 2 Dark Estate</li>
-                            <li><span></span> 2 French Roast</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="step_content2 questionCard">
-                    <ul>
-                        <h3>Select your industry:</h3>
-                        <li>
-                            <input id="office" type="radio" value="Office Coffee/OCS" name="radio">
-                            <label for="office">Office Coffee/OCS</label>
-                        </li>
-                        <li>
-                            <input id="hotels" type="radio" value="Hotels/Hospitability" name="radio">
-                            <label for="hotels">Hotels/Hospitability</label>
-                        </li>
-                        <li>
-                            <input id="wholesale" type="radio" value="Wholesale Buyer (Local office, etc)" name="radio">
-                            <label for="wholesale">Wholesale Buyer (Local office, etc)</label>
-                        </li>
-                        <li>
-                            <input id="other" type="radio" value="Other" name="radio">
-                            <label for="other">Other</label>
-                        </li>
-                    </ul>
-                </div>
-                <div class="step_content3 questionCard">
-                    <h3>Mailing Address</h3>
-                    <div class="col-md-6">
-                        <label for="">First Name*</label>
-                        <input type="text" name="F_Name" placeholder="First Name">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="">Last Name*</label>
-                        <input type="text" name="L_Name" placeholder="Last Name">
-                    </div>
-                    <div class="col-md-12">
-                        <label for="">Address*</label>
-                        <input type="text" name="L_Name" placeholder="Address">
-                    </div>
-                    <div class="col-md-12">
-                        <label for="">Town/City*</label>
-                        <input type="text" name="L_Name" placeholder="Town/City">
-                    </div>
-                    <div class="col-md-12">
-                        <label for="">State/Province*</label>
-                        <select placeholder="State/Province" id="mySelect">
-                            <option value="volvo">State1</option>
-                            <option value="saab">State2</option>
-                            <option value="mercedes">State3</option>
-                            <option value="audi">State4</option>
-                        </select>
-                    </div>
-                    <div class="col-md-12">
-                        <label for="">Postal Code/Zip*</label>
-                        <input type="text" name="L_Name" placeholder="Postal Code/Zip">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="">Phone</label>
-                        <input type="text" name="F_Name" placeholder="+0 000 000 0000">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="">Email Address*</label>
-                        <input type="text" name="L_Name" placeholder="yourmail@gmail.com">
-                    </div>
-                </div>
-                <div class="step_content4 questionCard">
-                    <h3>Thanks For Order Your Free Sample</h3>
-                </div>
-
-            </div>
-            <!--
             <div class="step_navigation">
                 <a id="prev" onclick="previous()" style="display: none">Previous</a>
                 <a id="nxt" onclick="next()">Next</a>
             </div>
-            -->            
-            <div id="form_container">
+            <div class="step_section_header">
+                <h1>Order Free Sample</h1>
+                <span></span>
+            </div>
+            <div class="step_content_area">
+                <form id="form_40342" class="appnitro"  method="post" action="https://formspree.io/adam@grabngomarkets.com">
+                    <div class="step_content1 questionCard" style="display: block">
+                        <h3>Choose Your Product</h3>
+                        <div class="col-md-6">
+                            <label>
+                                <input type="radio" name="Product" value="k_kup" checked>
+                                <img src="images/k_kup.jpg" alt="">
+                            </label>
+                            <h2>You Will Get</h2>
+                            <ul>
+                                <li><span></span> 2 Donut Blend</li>
+                                <li><span></span> 2 Dark Estate</li>
+                                <li><span></span> 2 Hazelnut</li>
+                                <li><span></span> 2 Costa Rican</li>
+                                <li><span></span> 2 Cocoa</li>
+                                <li><span></span> 2 Breakfast Blend</li>
+                                <li><span></span> 2 French Roast</li>
+                                <li><span></span> 2 French Vanilla</li>
+                                <li><span></span> 2 Dark Sumatra</li>
+                                <li><span></span> 2 Columbian Supremo</li>
+                                <li><span></span> 2 Decaf</li>
+                                <li><span></span> 2 Jamacian Me Nuts</li>
+                                <li><span></span> 2 Kona Island Blend</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <label>
+                                <input type="radio" name="Product" value="frac_pack">
+                                <img src="images/frac_pack.jpg" alt="">
+                            </label>
+                            <h2>You Will Get</h2>
+                            <ul>
+                                <li><span></span> 2 Safari</li>
+                                <li><span></span> 2 Breakfast Blend</li>
+                                <li><span></span> 2 Columbian Molina</li>
+                                <li><span></span> 2 Decaf</li>
+                                <li><span></span> 2 Dark Estate</li>
+                                <li><span></span> 2 French Roast</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step_content2 questionCard">
+                        <ul>
+                            <h3>Select your industry:</h3>
+                            <li>
+                                <input id="" name="Your Industry" type="radio" value="Frac Pack" />
+                                <label class="choice" for="">Frac Pack</label>
+                            </li>
+                            <li>
+                                <input id="" name="Your Industry" type="radio" value="K-Cups" />
+                                <label class="choice" for="">K-Cups</label>
+                            </li>
+                            <li>
+                                <input id="" name="Your Industry" type="radio" value="Both" />
+                                <label class="choice" for="">Both</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="step_content3 questionCard">
+                        <h3>Mailing Address</h3>
+                        <div class="col-md-6">
+                            <label for="">First Name</label>
+                            <input id="element_2_1" name= "First Name" class="element text" maxlength="255" size="8" value="" required/>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="">Last Name</label>
+                            <input id="element_2_2" name= "Last Name" class="element text" maxlength="255" size="14" value="" required/>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="">Street Address</label>
+                            <input id="element_1_1" name="Street Address" class="element text large" value="" type="text" required/>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="">Street Address2</label>
+                            <input id="element_1_2" name="Street Address2" class="element text large" value="" type="text"/>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="">Town/City</label>
+                            <input id="element_1_3" name="Town/City" class="element text medium" value="" type="text" required/>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="">State / Province / Region</label>
+                            <input id="element_1_4" name="State / Province / Region" class="element text medium" value="" type="text" required/>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="">Postal / Zip Code</label>
+                            <input id="element_1_5" name="Postal / Zip Code" class="element text medium" maxlength="15" value="" type="text" required/>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="">Phone</label>
+                            <input type="text" name="Phone" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="">Email Address</label>
+                            <input id="element_5" name="Email" type="text" maxlength="255" value="" required/> 
+                        </div>
+                        <div class="col-md-12">
+                            <input class="form_submit" type="submit" value="Send">
+                        </div>
+                    </div>
+                </form>
+            </div>
 
-<form id="form_40342" class="appnitro"  method="post" action="https://formspree.io/adam@grabngomarkets.com">
-<ul >
-
-<li id="li_2" >
-<label class="description" for="element_2">Name </label>
-<span>
-<input id="element_2_1" name= "element_2_1" class="element text" maxlength="255" size="8" value=""/>
-<label>First</label>
-</span>
-<span>
-<input id="element_2_2" name= "element_2_2" class="element text" maxlength="255" size="14" value=""/>
-<label>Last</label>
-</span> 
-</li><li id="li_4" >
-<label class="description" for="element_4">Select Your Free Samples </label>
-<span>
-<input id="element_4_1" name="element_4" class="element radio" type="radio" value="1" />
-<label class="choice" for="element_4_1">Frac Pack</label>
-<input id="element_4_2" name="element_4" class="element radio" type="radio" value="2" />
-<label class="choice" for="element_4_2">K-Cups</label>
-<input id="element_4_3" name="element_4" class="element radio" type="radio" value="3" />
-<label class="choice" for="element_4_3">Both</label>
-
-</span> 
-</li><li id="li_1" >
-<label class="description" for="element_1">Address </label>
-
-<div>
-<input id="element_1_1" name="element_1_1" class="element text large" value="" type="text">
-<label for="element_1_1">Street Address</label>
-</div>
-
-<div>
-<input id="element_1_2" name="element_1_2" class="element text large" value="" type="text">
-<label for="element_1_2">Address Line 2</label>
-</div>
-
-<div class="left">
-<input id="element_1_3" name="element_1_3" class="element text medium" value="" type="text">
-<label for="element_1_3">City</label>
-</div>
-
-<div class="right">
-<input id="element_1_4" name="element_1_4" class="element text medium" value="" type="text">
-<label for="element_1_4">State / Province / Region</label>
-</div>
-
-<div class="left">
-<input id="element_1_5" name="element_1_5" class="element text medium" maxlength="15" value="" type="text">
-<label for="element_1_5">Postal / Zip Code</label>
-</div>
-
-<div class="right">
-</div> 
-</li><li id="li_3" >
-<label class="description" for="element_3">Phone </label>
-<span>
-<input id="element_3_1" name="element_3_1" class="element text" size="3" maxlength="3" value="" type="text"> -
-<label for="element_3_1">(###)</label>
-</span>
-<span>
-<input id="element_3_2" name="element_3_2" class="element text" size="3" maxlength="3" value="" type="text"> -
-<label for="element_3_2">###</label>
-</span>
-<span>
- <input id="element_3_3" name="element_3_3" class="element text" size="4" maxlength="4" value="" type="text">
-<label for="element_3_3">####</label>
-</span>
- 
-</li><li id="li_5" >
-<label class="description" for="element_5">Email </label>
-<div>
-<input id="element_5" name="element_5" class="element text medium" type="text" maxlength="255" value=""/> 
-</div> 
-</li>
-
-<li class="buttons">
-    <input type="hidden" name="form_id" value="40342" />
-    
-<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
-</li>
-</ul>
-</form>
-</div>
-
+            <!--<div id="form_container">
+                <form id="form_40342" class="appnitro"  method="post" action="https://formspree.io/adam@grabngomarkets.com">
+                <ul >
+                    <li id="li_2" >
+                        <label class="description" for="element_2">Name </label>
+                        <span>
+                            <input id="element_2_1" name= "element_2_1" class="element text" maxlength="255" size="8" value=""/>
+                            <label>First</label>
+                        </span>
+                        <span>
+                            <input id="element_2_2" name= "element_2_2" class="element text" maxlength="255" size="14" value=""/>
+                            <label>Last</label>
+                        </span> 
+                    </li>
+                    <li id="li_4" >
+                        <label class="description" for="element_4">Select Your Free Samples </label>
+                        <span>
+                            <input id="element_4_1" name="element_4" class="element radio" type="radio" value="1" />
+                            <label class="choice" for="element_4_1">Frac Pack</label>
+                            <input id="element_4_2" name="element_4" class="element radio" type="radio" value="2" />
+                            <label class="choice" for="element_4_2">K-Cups</label>
+                            <input id="element_4_3" name="element_4" class="element radio" type="radio" value="3" />
+                            <label class="choice" for="element_4_3">Both</label>
+                        </span> 
+                    </li>
+                    <li id="li_1" >
+                        <label class="description" for="element_1">Address </label>
+                        <div>
+                            <input id="element_1_1" name="element_1_1" class="element text large" value="" type="text">
+                            <label for="element_1_1">Street Address</label>
+                        </div>
+                        <div>
+                            <input id="element_1_2" name="element_1_2" class="element text large" value="" type="text">
+                            <label for="element_1_2">Address Line 2</label>
+                        </div>
+                        <div class="left">
+                            <input id="element_1_3" name="element_1_3" class="element text medium" value="" type="text">
+                            <label for="element_1_3">City</label>
+                        </div>
+                        <div class="right">
+                            <input id="element_1_4" name="element_1_4" class="element text medium" value="" type="text">
+                            <label for="element_1_4">State / Province / Region</label>
+                        </div>
+                        <div class="left">
+                            <input id="element_1_5" name="element_1_5" class="element text medium" maxlength="15" value="" type="text">
+                            <label for="element_1_5">Postal / Zip Code</label>
+                        </div>
+                        <div class="right">
+                        </div> 
+                    </li>
+                    <li id="li_3" >
+                        <label class="description" for="element_3">Phone </label>
+                        <span>
+                            <input id="element_3_1" name="element_3_1" class="element text" size="3" maxlength="3" value="" type="text"> -
+                            <label for="element_3_1">(###)</label>
+                        </span>
+                        <span>
+                            <input id="element_3_2" name="element_3_2" class="element text" size="3" maxlength="3" value="" type="text"> -
+                            <label for="element_3_2">###</label>
+                        </span>
+                        <span>
+                            <input id="element_3_3" name="element_3_3" class="element text" size="4" maxlength="4" value="" type="text">
+                            <label for="element_3_3">####</label>
+                        </span>
+                    </li>
+                    <li id="li_5" >
+                        <label class="description" for="element_5">Email </label>
+                        <div>
+                            <input id="element_5" name="element_5" class="element text medium" type="text" maxlength="255" value=""/> 
+                        </div> 
+                    </li>
+                    <li class="buttons">
+                        <input type="hidden" name="form_id" value="40342" />
+                        <input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
+                    </li>
+                    </ul>
+                </form>
+            </div>-->
         </div>
         
     </section>
@@ -318,17 +306,17 @@
                     <p>Cut Out The Middleman and Save</p>
                 </div>
                 <div class="col-md-3">
-                    <p class="contact_cont"><i class="fas fa-phone"></i>303-761-2500</p>
-                    <p class="contact_cont"><i class="fas fa-envelope"></i> sales@AlpineCoffee.com</p>
-                    <p class="contact_cont"><i class="fas fa-map-marker-alt"></i> 2860 S. Tejon St., Englewood, CO. 80110</p>
+                    <p class="contact_cont"><i class="fa fa-phone"></i>303-761-2500</p>
+                    <p class="contact_cont"><i class="fa fa-envelope"></i> sales@AlpineCoffee.com</p>
+                    <p class="contact_cont"><i class="fa fa-map-marker-alt"></i> 2860 S. Tejon St., Englewood, CO. 80110</p>
                 </div>
                 <div class="col-md-3">
                     <h3>Social Links</h3>
                     <ul>
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -343,52 +331,8 @@
     <!--js link-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/free.sample.js"></script>
     <!--js link-->
-
-<script>
-    var qlist = document.getElementsByClassName("questionCard");
-    var pr = document.getElementById('prev');
-    var nx = document.getElementById('nxt');
-    var i = 0;
-    var length = qlist.length;
-    function previous () {
-        if (i == 1) {
-            alert('Previous is empty now !');
-            return;
-        }
-        i--
-        qlist[i].style.display = 'none';
-        if (i != 0) {
-            qlist[i - 1].style.display = 'block';
-        }
-
-        if(i == 1){
-            pr.style.display = 'none'
-        }
-        if(i < length){
-            nx.style.display = 'inline-block'
-        }
-    }
-    function  next () {
-        if (i == length) {
-            alert('No More Options!');
-            return;
-        }
-        qlist[i].style.display = 'block';
-        if (i != 0) {
-            qlist[i-1].style.display = 'none';
-        }
-        i++
-
-        if(i > 1){
-            pr.style.display = 'inline-block'
-        }
-        if(i == length){
-            nx.style.display = 'none'
-        }
-    }
-</script>
-
 
     <script>
         $(document).ready(function(){ 
