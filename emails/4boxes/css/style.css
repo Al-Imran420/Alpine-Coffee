@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,700i,900');
+
+*{padding: 0; margin: 0; box-sizing: border-box;}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+.container{
+    width: 600px;
+    display: block;
+    margin: auto;
+}
+.full_area{
+    width: 100%;
+    float: left;
+    position: relative;
+    /*-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);*/
+    border: 10px double #f9f8f4;
+}
+.banner{
+    width: 100%;
+    height: 472px;
+    float: left;
+    position: relative;
+    background: url(../images/r-bg.png) right center no-repeat;
+}
+.banner .img1{
+    display: block;
+    margin: auto;
+    margin-top: 60px;
+}
+.banner .img2{
+    display: block;
+    left: 0
+}
+.banner .img3{
+    display: block;
+    left: 0;
+    margin-top: 15px;
+}
+
+
+
+.body{
+    width: 100%;
+    height: auto;
+    float: left;
+    position: relative;
+    padding: 0 30px;
+}
+.body p{
+    font-size: 14px;
+    color: #2F1600;
+}
+.body h3{
+    font-size: 18px;
+    font-weight: 500;
+    color: #2F1600;
+    margin-top: 30px;
+}
+.body ul{
+    width: 100%;
+    height: auto;
+    float: left;
+    position: relative;
+    margin-top: 15px;
+}
+.body ul li{
+    list-style: none;
+    font-size: 14px;
+    color: #2F1600;
+    background-image: url(../images/li_icon.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    padding-left: 20px;
+    width: 100%;
+    float: left;
+    margin-bottom: 5px;
+}
+.body_h2{
+    width: 100%;
+    float: left;
+    position: relative;
+    text-align: center;
+}
+.body_h2 h2{
+    padding: 15px;
+    border: 1px solid #979797;
+    color: #2F1600;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+.body img{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+footer{
+    width: 100%;
+    height: auto;
+    float: left;
+    position: relative;
+    background: #f9f8f4;
+    padding: 40px;
+}
+.footer_left{
+    width: 70%;
+    height: auto;
+    float: left;
+    position: relative;
+}
+.footer_left h3{
+    font-size: 24px;
+    font-weight: 800;
+    color: #2F1600;
+}
+
+.footer_left ul{
+    width: 100%;
+    height: auto;
+    float: left;
+    position: relative;
+    margin-top: 5px;
+}
+.footer_left ul li{
+    list-style: none;
+    font-size: 14px;
+    color: #2F1600;
+    display: inline-block;
+    margin-right: 15px;
+}
+.footer_left ul li .call{
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/ic_phone.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    float: left;
+}
+.footer_left ul li .email{
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/ic_message.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    float: left;
+}
+.footer_right{
+    width: 30%;
+    height: auto;
+    float: left;
+    position: relative;
+    border-left: 1px solid #979797;
+}
+.footer_right img{
+    display: block;
+    margin: auto;
+}
