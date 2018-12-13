@@ -34,39 +34,6 @@
         .hide{display: none}
     </style>
 
-
-<style>
-.cardContainer {
-    position: relative;
-    top: 400px;
-    background-color: #333;
-    height: 100%;
-    box-shadow: -1px -1px 7px black;
-}
-/*.active {
-    display: block !important;
-}*/
-.questionCard {
-    display: none;
-}
-.navCard {
-    max-width: 400px;
-    min-width: 60px;
-    margin: 0 auto;
-    border-color: #1b6bb9;
-    z-index: 1;
-    padding: 20px;
-    background-color: white;
-    border-radius: 2px;
-    box-shadow: 1px 1px 7px;
-    border: rgba(128, 128, 128, 0.35);
-    position: inherit;
-    top: -270px;
-    background-color: #1b6bb9;
-    align-content: center;
-}
-</style>
-
 </head>
 
 <body>
@@ -103,7 +70,7 @@
             </div>
             <div class="step_navigation">
                 <a id="prev" onclick="previous()" style="display: none">Previous</a>
-                <a id="nxt" onclick="next()">Next</a>
+                <a id="next" onclick="next()">Next</a>
             </div>
             <div class="step_section_header">
                 <h1>Order Free Sample</h1>
@@ -111,7 +78,8 @@
             </div>
             <div class="step_content_area">
                 <form id="form_40342" class="appnitro"  method="post" action="https://formspree.io/adam@grabngomarkets.com">
-                    <div class="step_content1 questionCard" style="display: block">
+                <div id="group">
+                    <div class="step_content1 questionCard current" >
                         <h3>Choose Your Product</h3>
                         <div class="col-md-6">
                             <label>
@@ -210,87 +178,9 @@
                             <input class="form_submit" type="submit" value="Send">
                         </div>
                     </div>
+                </div>
                 </form>
             </div>
-
-            <!--<div id="form_container">
-                <form id="form_40342" class="appnitro"  method="post" action="https://formspree.io/adam@grabngomarkets.com">
-                <ul >
-                    <li id="li_2" >
-                        <label class="description" for="element_2">Name </label>
-                        <span>
-                            <input id="element_2_1" name= "element_2_1" class="element text" maxlength="255" size="8" value=""/>
-                            <label>First</label>
-                        </span>
-                        <span>
-                            <input id="element_2_2" name= "element_2_2" class="element text" maxlength="255" size="14" value=""/>
-                            <label>Last</label>
-                        </span> 
-                    </li>
-                    <li id="li_4" >
-                        <label class="description" for="element_4">Select Your Free Samples </label>
-                        <span>
-                            <input id="element_4_1" name="element_4" class="element radio" type="radio" value="1" />
-                            <label class="choice" for="element_4_1">Frac Pack</label>
-                            <input id="element_4_2" name="element_4" class="element radio" type="radio" value="2" />
-                            <label class="choice" for="element_4_2">K-Cups</label>
-                            <input id="element_4_3" name="element_4" class="element radio" type="radio" value="3" />
-                            <label class="choice" for="element_4_3">Both</label>
-                        </span> 
-                    </li>
-                    <li id="li_1" >
-                        <label class="description" for="element_1">Address </label>
-                        <div>
-                            <input id="element_1_1" name="element_1_1" class="element text large" value="" type="text">
-                            <label for="element_1_1">Street Address</label>
-                        </div>
-                        <div>
-                            <input id="element_1_2" name="element_1_2" class="element text large" value="" type="text">
-                            <label for="element_1_2">Address Line 2</label>
-                        </div>
-                        <div class="left">
-                            <input id="element_1_3" name="element_1_3" class="element text medium" value="" type="text">
-                            <label for="element_1_3">City</label>
-                        </div>
-                        <div class="right">
-                            <input id="element_1_4" name="element_1_4" class="element text medium" value="" type="text">
-                            <label for="element_1_4">State / Province / Region</label>
-                        </div>
-                        <div class="left">
-                            <input id="element_1_5" name="element_1_5" class="element text medium" maxlength="15" value="" type="text">
-                            <label for="element_1_5">Postal / Zip Code</label>
-                        </div>
-                        <div class="right">
-                        </div> 
-                    </li>
-                    <li id="li_3" >
-                        <label class="description" for="element_3">Phone </label>
-                        <span>
-                            <input id="element_3_1" name="element_3_1" class="element text" size="3" maxlength="3" value="" type="text"> -
-                            <label for="element_3_1">(###)</label>
-                        </span>
-                        <span>
-                            <input id="element_3_2" name="element_3_2" class="element text" size="3" maxlength="3" value="" type="text"> -
-                            <label for="element_3_2">###</label>
-                        </span>
-                        <span>
-                            <input id="element_3_3" name="element_3_3" class="element text" size="4" maxlength="4" value="" type="text">
-                            <label for="element_3_3">####</label>
-                        </span>
-                    </li>
-                    <li id="li_5" >
-                        <label class="description" for="element_5">Email </label>
-                        <div>
-                            <input id="element_5" name="element_5" class="element text medium" type="text" maxlength="255" value=""/> 
-                        </div> 
-                    </li>
-                    <li class="buttons">
-                        <input type="hidden" name="form_id" value="40342" />
-                        <input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
-                    </li>
-                    </ul>
-                </form>
-            </div>-->
         </div>
         
     </section>

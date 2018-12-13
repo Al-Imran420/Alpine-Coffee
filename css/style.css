@@ -413,7 +413,7 @@ header{
 
 .banner{
   width: 100%;
-  height: auto;
+  min-height: 200px;
   float: left;
   position: relative;
   overflow: hidden;
@@ -440,7 +440,7 @@ header{
   left: 0;
   right: 0;
   width: 100%;
-  height: 50px;
+  height: 155px;
   margin: auto;
   text-align: center;
 }
@@ -546,7 +546,7 @@ header{
     font-size: 17px;
     border-radius: 50px;
     border: 1px solid #000000;
-    margin: 0 10px;
+    margin: 10px;
 }
 .tab button:hover {
     border-color: #b89d64;
@@ -574,6 +574,7 @@ header{
 
 .tabcontent table {
   width: 100%;
+  min-width: 1100px;
   height: auto;
   float: left;
   position: relative;
@@ -664,7 +665,7 @@ header{
 }
 .hotel_filter_table{
   width: 100%;
-  min-height: 356px;
+  min-height: 156px;
   max-height: 400px;
   float: left;
   position: relative;
@@ -2164,8 +2165,7 @@ display:none;
   width: 100%;
   float: left;
   position: relative;
-  min-height: 400px;
-  margin: 60px 0;
+  min-height: 550px;
 }
 .step_section{
   display: inline-flex;
@@ -2222,7 +2222,6 @@ display:none;
   float: left;
   position: relative;
   text-align: center;
-  margin-bottom: 30px;
 }
 .step_section_header h1{
   font-size: 30px;
@@ -2305,7 +2304,7 @@ display:none;
 .step_navigation{
   width: 100%;
   float: left;
-  margin: 20px 0;
+  margin-bottom: 20px;
 }
 .step_navigation a{
   width: 100px;
@@ -2316,7 +2315,7 @@ display:none;
   display: inline-block;
   cursor: pointer;
 }
-.step_navigation #nxt{
+.step_navigation button{
   width: 100px;
   text-align: center;
   padding: 10px 20px;
@@ -2324,7 +2323,7 @@ display:none;
   color: #ffffff;
   display: inline-block;
   cursor: pointer;
-  float: right;
+  outline: none;
 }
 .step_navigation a:hover{
   color: #ffffff;
@@ -2336,12 +2335,31 @@ display:none;
   text-decoration: none;
   outline: none;
 }
+.step_navigation #next{
+  width: 100px;
+  text-align: center;
+  padding: 10px 20px;
+  background: #b89d64;
+  color: #ffffff;
+  display: inline-block;
+  cursor: pointer;
+  float: right;
+}
+#group .questionCard{
+    display: none;
+}
+#group .questionCard.current{
+    display: block;
+}
+
+
 
 .step_content2{
   width: 100%;
   float: left;
   position: relative;
   padding: 0 100px;
+  margin-bottom: 40px;
 }
 .step_content2 h3{
   text-transform: uppercase;
@@ -2366,6 +2384,7 @@ display:none;
   float: left;
   position: relative;
   padding: 0 250px;
+  margin-bottom: 50px;
 }
 .step_content3 h3{
   text-transform: uppercase;
@@ -2376,19 +2395,17 @@ display:none;
 }
 .step_content3 label{
   width: 100%;
-  margin-bottom: 10px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   color: #000000;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .step_content3 input, select{
   width: 100%;
   border: 1px solid #c2c2c2;
-  padding: 10px;
+  padding: 5px 10px;
   background: none;
   outline: none;
-  height: 40px;
 }
 .step_content3 .form_submit{
   width: 120px;
@@ -2504,6 +2521,11 @@ display:none;
   }
   .banner_cont h1{
     font-size: 20px;
+  }
+  .banner img{
+    width: inherit;
+    height: 100%;
+    position: absolute;
   }
 }
 @media (max-width: 520px) {

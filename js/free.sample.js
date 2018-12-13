@@ -1,97 +1,60 @@
-var qlist = document.getElementsByClassName("questionCard");
-var active1 = document.getElementsByClassName("active_section2");
-
-var pr = document.getElementById('prev');
-var nx = document.getElementById('nxt');
-
-var i = 0;
-var length = qlist.length;
-function previous () {
-    if (i == 1) {
-        alert('Previous is empty now !');
-        return;
+function updateItems(delta){
+    var $items = $('#group').children('.questionCard');
+    var $current = $items.filter('.current');
+    var index = $current.index();
+    var newIndex = index+delta;
+    // Range check the new index
+    newIndex = (newIndex < 0) ? 0 : ((newIndex > $items.length) ? $items.length : newIndex); 
+    if (newIndex != index){
+        $current.removeClass('current');
+        $current = $items.eq(newIndex).addClass('current');
+        // Hide/show the next/prev
+        $("#prev").toggle(!$current.is($items.first()));    
+        $("#next").toggle(!$current.is($items.last()));    
     }
-    i--
-    qlist[i].style.display = 'none';
-    if (i != 0) {
-        qlist[i - 1].style.display = 'block';
-    }
+}
+// $("#next").click(function () {
+//     updateItems(1);
+// });
+// $("#prev").click(function () {
+//     updateItems(-1);
+// });
+function next(){
+    updateItems(1);
 
-    if(i == 1){
-        pr.style.display = 'none'
+    var $items = $('#group').children('.questionCard');
+    var $current = $items.filter('.current');
+    var index = $current.index();
+    console.log(index)
+    if(index == 1){
+        document.getElementById('line2').className = 'active_section';
+        document.getElementById('span2').className = 'active_section';
     }
-    if(i < 3){
-        nx.style.display = 'inline-block'
-    }
-
-    if(i ==3){
+    if(index == 2){
         document.getElementById('line2').className = 'active_section';
         document.getElementById('span2').className = 'active_section';
         document.getElementById('line3').className = 'active_section';
         document.getElementById('span3').className = 'active_section';
     }
-    if(i ==2){
+}
+
+function previous(){
+    updateItems(-1);
+
+    var $items = $('#group').children('.questionCard');
+    var $current = $items.filter('.current');
+    var index = $current.index();
+    console.log(index)
+    if(index == 1){
         document.getElementById('line2').className = 'active_section';
         document.getElementById('span2').className = 'active_section';
         document.getElementById('line3').className = '';
         document.getElementById('span3').className = '';
     }
-    if(i ==1){
+    if(index == 0){
         document.getElementById('line2').className = '';
         document.getElementById('span2').className = '';
         document.getElementById('line3').className = '';
         document.getElementById('span3').className = '';
     }
-
 }
-function  next () {
-    if (i == length) {
-        alert('No More Options!');
-        return;
-    }
-    qlist[i].style.display = 'block';
-    if (i != 0) {
-        qlist[i-1].style.display = 'none';
-    }
-    i++
-
-    if(i > 1){
-        pr.style.display = 'inline-block'
-    }
-    if(i == 3){
-        nx.style.display = 'none'
-    }
-
-    if(i ==2){
-        document.getElementById('line2').className = 'active_section';
-        document.getElementById('span2').className = 'active_section';
-    }
-    if(i ==3){
-        document.getElementById('line2').className = 'active_section';
-        document.getElementById('span2').className = 'active_section';
-        document.getElementById('line3').className = 'active_section';
-        document.getElementById('span3').className = 'active_section';
-    }
-}
-
-// function onSubmit(){
-//     console.log("OnSubmit button is working !")
-//     if (i == length) {
-//         alert('No More Options!');
-//         return;
-//     }
-//     qlist[i].style.display = 'block';
-//     if (i != 0) {
-//         qlist[i-1].style.display = 'none';
-//     }
-//     i++
-//     if(length == 4){
-//         document.getElementById('line2').className = 'active_section';
-//         document.getElementById('span2').className = 'active_section';
-//         document.getElementById('line3').className = 'active_section';
-//         document.getElementById('span3').className = 'active_section';
-//         document.getElementById('line4').className = 'active_section';
-//         document.getElementById('span4').className = 'active_section';
-//         pr.style.display = 'inline-block'
-//     }
-// }
